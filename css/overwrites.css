@@ -1,0 +1,106 @@
+/** General ============== **/
+
+.gray-background {
+  background-color: rgb(238, 238, 238);
+}
+
+.charcole-background {
+  background-color: #2f3c4f;
+}
+
+.bold {
+  color: #000;
+  font-weight: bold;
+}
+
+.light-gray {
+  color: rgba(148, 148, 148, 0.8);
+}
+
+.timeline-body ul {
+  list-style: disc;
+}
+
+/** Specific Items ============== **/
+
+.repo-link {
+  float: right;
+}
+
+.repo-link:hover {
+  color: #2b64a9;
+}
+
+.store-link:hover {
+  color: #2b64a9;
+}
+
+.footer-right {
+  float: none !important;
+  margin-top: 20px;
+}
+
+#about ul {
+  margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  .footer-right {
+    float: right !important;
+    margin-top: 0px;
+  }
+}
+
+.btn-contact-me {
+  margin-top: 50px;
+}
+
+.btn-contact-me:hover {
+  background-color: #2b64a9 !important;
+  color: #ffffff !important;
+}
+
+.btn-cv {
+  margin-top: 30px;
+  background-color: #2b64a9;
+  color: white;
+  display: block;
+}
+
+.header-down-arrow {
+  color: #fff;
+  font-size: 50px;
+}
+
+@media (min-width: 768px) {
+  .btn-cv {
+    float: right;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .last-service {
+    margin-bottom: 90px !important;
+  }
+}
+
+/** FlatIcon Font ============== **/
+
+[class^="flaticon-"]:before,
+[class*=" flaticon-"]:before,
+[class^="flaticon-"]:after,
+[class*=" flaticon-"]:after {
+  font-size: 50px;
+  display: table-cell;
+  vertical-align: middle;
+  width: 100px;
+  height: 100px;
+}
+.profile-thumb{
+  width: 30%;
+}
+
+.mad{
+  margin-left: 50%;
+  text-align: center;
+}
