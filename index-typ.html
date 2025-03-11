@@ -1,0 +1,2047 @@
+<section class="recent pt-100">
+    <div class="container">
+        <div class="title text-center">
+            <h2 class="fw-5 fs-40 lh-120 ls-5 color-dark mb-16">Recent Search Weather</h2>
+            <p class="fw-4 fs-16 lh-160 ls-2 color-gray mb-48">
+                The 'Recent Search Weather' section displays the latest weather information for the cities you have recently
+                searched. Stay up-to-date with the weather conditions of your preferred cities with this section.
+            </p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-3">
+                <a href="map.html" class="content d-block text-center p-3 border rounded" style="background-color: #f8f9fa;">
+                    <i class="fas fa-cloud-showers"></i>
+                    <p class="mb-1">15°</p>
+                    <h4>(Light Rain)</h4>
+                    <h2>Italy</h2>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="map.html" class="content d-block text-center p-3 border rounded" style="background-color: #f8f9fa;">
+                    <img src="./assets/media/icon/sun-icon-big.png" alt="">
+                    <p class="mb-1">18°</p>
+                    <h4>(Sunny)</h4>
+                    <h2>Dubai</h2>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="map.html" class="content d-block text-center p-3 border rounded" style="background-color: #f8f9fa;">
+                    <img src="./assets/media/icon/windy-big.png" alt="">
+                    <p class="mb-1">10°</p>
+                    <h4>(Windy)</h4>
+                    <h2>Japan</h2>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+/*---------------------------------------------"
+Template Name: Thunder Pro
+Description: Thunder Pro Weather Forcast And News Template
+Version: 1.0.0
+
+===============================================   
+STYLE SHEET INDEXING
+|
+|___ Fonts
+|___ Variables
+|___ Reset Styles
+|___ Responsive
+|___ Spacing
+|___ Helper Classes
+|___ Buttons
+|___ Headings
+|___ Layout Styles
+|___ END STYLE SHEET INDEXING
+
+--------------------------------------------*/
+
+/*-------------------------
+    Fonts
+-------------------------*/
+
+/*-------------------------
+    Variables
+-------------------------*/
+
+/*-------------------------
+    Responsive
+-------------------------*/
+
+/*-------------------------
+    Reset Styles
+-------------------------*/
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+  }
+  
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  section:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  
+  @media only screen and (min-width: 1200px) and (max-width: 1399px) {
+    .container {
+      max-width: 100%;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+  
+  /*-------------------------
+      Typography
+  -------------------------*/
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    color: #898E8F;
+    background: #FAFBFF;
+    font-weight: 400;
+    background-color: #FAFBFF;
+    height: 100%;
+    vertical-align: baseline;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+  
+  body::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background-color: #FFFFFF;
+    border-radius: 3px;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background: #FFAD51;
+    box-shadow: inset 2px 2px 5px 0 rgba(255, 255, 255, 0.5);
+  }
+  
+  body.dark {
+    background: #252222;
+  }
+  
+  h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6,p {
+    margin: 0 0 20px 0;
+  }
+  
+  h1 a,h2 a,h3 a,h4 a,h5 a,h6 a {
+    color: inherit;
+  }
+  
+  h1,h2,h3,h4,h5,h6 {
+    font-weight: 750;
+    color: #252222;
+  }
+  
+  p {
+    font-size: 19px;
+    font-weight: 600;
+    margin: 0 0 16px 0;
+    line-height: 150%;
+    letter-spacing: 0.03em;
+  }
+  
+  @media (max-width: 490px) {
+    p {
+      font-size: 14px;
+    }
+  }
+  
+  a {
+    display: inline-block;
+    text-decoration: none;
+    color: unset;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  a:hover {
+    transition: all 0.5s ease-in-out;
+    color: #FFAD51;
+  }
+  
+  /*-------------------------
+      Spacing
+  -------------------------*/
+  
+  /*----------------------------------------*/
+  
+  /*  03. SPACE CSS START
+  /*----------------------------------------*/
+  
+  .mb-200 {
+    margin-bottom: 250px;
+  }
+  
+  .mb-100 {
+    margin-bottom: 100px;
+  }
+  
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .mb-100 {
+      margin-bottom: 80px;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .mb-100 {
+      margin-bottom: 70px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .mb-100 {
+      margin-bottom: 50px;
+    }
+  }
+  
+  .mb-80 {
+    margin-bottom: 80px;
+  }
+  
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .mb-80 {
+      margin-bottom: 60px;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .mb-80 {
+      margin-bottom: 48px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .mb-80 {
+      margin-bottom: 32px;
+    }
+  }
+  
+  .mb-64 {
+    margin-bottom: 64px;
+  }
+  
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .mb-64 {
+      margin-bottom: 48px;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .mb-64 {
+      margin-bottom: 42px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .mb-64 {
+      margin-bottom: 32px;
+    }
+  }
+  
+  .mb-48 {
+    margin-bottom: 48px;
+  }
+  
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .mb-48 {
+      margin-bottom: 42px;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .mb-48 {
+      margin-bottom: 32px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .mb-48 {
+      margin-bottom: 24px;
+    }
+  }
+  
+  .mb-40 {
+    margin-bottom: 40px;
+  }
+  
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .mb-40 {
+      margin-bottom: 33px;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .mb-40 {
+      margin-bottom: 28px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .mb-40 {
+      margin-bottom: 21px;
+    }
+  }
+  
+  .mb-32 {
+    margin-bottom: 32px;
+  }
+  
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .mb-32 {
+      margin-bottom: 26px;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .mb-32 {
+      margin-bottom: 22px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .mb-32 {
+      margin-bottom: 18px;
+    }
+  }
+  
+  .mb-24 {
+    margin-bottom: 24px;
+  }
+  
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .mb-24 {
+      margin-bottom: 21px;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .mb-24 {
+      margin-bottom: 18px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .mb-24 {
+      margin-bottom: 12px;
+    }
+  }
+  
+  .mb-20 {
+    margin-bottom: 20px;
+  }
+  
+  @media (max-width: 490px) {
+    .mb-20 {
+      margin-bottom: 16px;
+    }
+  }
+  
+  .mb-16 {
+    margin-bottom: 16px;
+  }
+  
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .mb-16 {
+      margin-bottom: 15px;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .mb-16 {
+      margin-bottom: 12px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .mb-16 {
+      margin-bottom: 10px;
+    }
+  }
+  
+  .mb-12 {
+    margin-bottom: 12px;
+  }
+  
+  .mb-8 {
+    margin-bottom: 8px;
+  }
+  
+  .pt-200 {
+    padding-top: 280px;
+  }
+  
+  @media (max-width: 992px) {
+    .pt-200 {
+      padding-top: 220px;
+    }
+  }
+  
+  .p-100 {
+    padding: 100px 0;
+  }
+  
+  @media (max-width: 992px) {
+    .p-100 {
+      padding: 80px 0;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .p-100 {
+      padding: 60px 0;
+    }
+  }
+  
+  @media (max-width: 490px) {
+    .p-100 {
+      padding: 40px 0;
+    }
+  }
+  
+  .pt-100 {
+    padding-top: 100px;
+  }
+  
+  .pt-62 {
+    padding-top: 62px;
+  }
+  
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .pt-62 {
+      padding-top: 52px;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .pt-62 {
+      padding-top: 42px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .pt-62 {
+      padding-top: 32px;
+    }
+  }
+  
+  @media (max-width: 490px) {
+    .pt-62 {
+      padding-top: 22px;
+    }
+  }
+  
+  .p-62 {
+    padding: 62px;
+  }
+  
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .p-62 {
+      padding: 52px;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .p-62 {
+      padding: 42px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .p-62 {
+      padding: 32px;
+    }
+  }
+  
+  @media (max-width: 490px) {
+    .p-62 {
+      padding: 22px;
+    }
+  }
+  
+  .p-55 {
+    padding: 55px 0;
+  }
+  
+  .pt-50 {
+    padding-top: 50px;
+  }
+  
+  .p-50 {
+    padding: 50px 0;
+  }
+  
+  .p-34 {
+    padding: 34px;
+  }
+  
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .p-34 {
+      padding: 24px;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .p-34 {
+      padding: 18px;
+    }
+  }
+  
+  .p-16 {
+    padding: 16px;
+  }
+  
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .p-16 {
+      padding: 15px;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .p-16 {
+      padding: 13px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .p-16 {
+      padding: 10px;
+    }
+  }
+  
+  @media (max-width: 490px) {
+    .p-16 {
+      padding: 10px;
+    }
+  }
+  
+  .p-30 {
+    padding: 30px;
+  }
+  
+  .pt-30 {
+    padding: 30px 0;
+  }
+  
+  .p-20 {
+    padding: 20px;
+  }
+  
+  .pt-12 {
+    padding: 12px 0;
+  }
+  
+  .p-12 {
+    padding: 12px;
+  }
+  
+  .p-10 {
+    padding: 10px;
+  }
+  
+  /*-------------------------
+      Helper Classes
+  -------------------------*/
+  
+  .color-dark {
+    color: #000000;
+  }
+  
+  .color-dark-2 {
+    color: #252222;
+  }
+  
+  .color-gray {
+    color: #898E8F;
+  }
+  
+  .dark .color-dark {
+    color: #FFFFFF;
+  }
+  
+  .dark .color-dark-2 {
+    color: #F0F5FF;
+  }
+  
+  .dark .color-gray {
+    color: #FFFFFF;
+  }
+  
+  .fs-143 {
+    font-size: 143px;
+  }
+  
+  @media (max-width: 1200px) {
+    .fs-143 {
+      font-size: 132px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .fs-143 {
+      font-size: 118px;
+    }
+  }
+  
+  @media (max-width: 490px) {
+    .fs-143 {
+      font-size: 98px;
+    }
+  }
+  
+  .fs-119 {
+    font-size: 119px;
+  }
+  
+  @media (max-width: 1200px) {
+    .fs-119 {
+      font-size: 98px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .fs-119 {
+      font-size: 78px;
+    }
+  }
+  
+  @media (max-width: 762px) {
+    .fs-119 {
+      font-size: 58px;
+    }
+  }
+  
+  @media (max-width: 580px) {
+    .fs-119 {
+      font-size: 48px;
+    }
+  }
+  
+  @media (max-width: 490px) {
+    .fs-119 {
+      font-size: 38px;
+    }
+  }
+  
+  .fs-95 {
+    font-size: 95px;
+  }
+  
+  @media (max-width: 1200px) {
+    .fs-95 {
+      font-size: 78px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .fs-95 {
+      font-size: 58px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .fs-95 {
+      font-size: 48px;
+    }
+  }
+  
+  @media (max-width: 490px) {
+    .fs-95 {
+      font-size: 38px;
+    }
+  }
+  
+  .fs-83 {
+    font-size: 83px;
+  }
+  
+  @media (max-width: 1200px) {
+    .fs-83 {
+      font-size: 72px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .fs-83 {
+      font-size: 58px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .fs-83 {
+      font-size: 48px;
+    }
+  }
+  
+  @media (max-width: 490px) {
+    .fs-83 {
+      font-size: 38px;
+    }
+  }
+  
+  .fs-69 {
+    font-size: 69px;
+  }
+  
+  @media (max-width: 1200px) {
+    .fs-69 {
+      font-size: 52px;
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .fs-69 {
+      font-size: 48px;
+    }
+  }
+  
+  @media (max-width: 490px) {
+    .fs-69 {
+      font-size: 38px;
+    }
+  }
+  
+  .fs-57 {
+    font-size: 57px;
+  }
+  
+  @media (max-width: 1200px) {
+    .fs-57 {
+      font-size: 44px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .fs-57 {
+      font-size: 38px;
+    }
+  }
+  
+  @media (max-width: 490px) {
+    .fs-57 {
+      font-size: 32px;
+    }
+  }
+  
+  .fs-48 {
+    font-size: 48px;
+  }
+  
+  @media (max-width: 1250px) {
+    .fs-48 {
+      font-size: 38px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .fs-48 {
+      font-size: 28px;
+    }
+  }
+  
+  @media (max-width: 490px) {
+    .fs-48 {
+      font-size: 23px;
+    }
+  }
+  
+  .fs-40 {
+    font-size: 40px;
+  }
+  
+  @media (max-width: 1250px) {
+    .fs-40 {
+      font-size: 32px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .fs-40 {
+      font-size: 28px;
+    }
+  }
+  
+  @media (max-width: 490px) {
+    .fs-40 {
+      font-size: 23px;
+    }
+  }
+  
+  .fs-33 {
+    font-size: 33px;
+  }
+  
+  @media (max-width: 1200px) {
+    .fs-33 {
+      font-size: 26px;
+    }
+  }
+  
+  @media (max-width: 490px) {
+    .fs-33 {
+      font-size: 18px;
+    }
+  }
+  
+  .fs-28 {
+    font-size: 28px;
+  }
+  
+  @media (max-width: 992px) {
+    .fs-28 {
+      font-size: 21px;
+    }
+  }
+  
+  @media (max-width: 580px) {
+    .fs-28 {
+      font-size: 18px;
+    }
+  }
+  
+  .fs-23 {
+    font-size: 23px;
+  }
+  
+  @media (max-width: 490px) {
+    .fs-23 {
+      font-size: 16px;
+    }
+  }
+  
+  .fs-19 {
+    font-size: 19px;
+  }
+  
+  @media (max-width: 490px) {
+    .fs-19 {
+      font-size: 16px;
+    }
+  }
+  
+  .fs-16 {
+    font-size: 16px;
+  }
+  
+  @media (max-width: 490px) {
+    .fs-16 {
+      font-size: 14px;
+    }
+  }
+  
+  .fs-13 {
+    font-size: 13px;
+  }
+  
+  .fs-11 {
+    font-size: 11px;
+  }
+  
+  .fw-3 {
+    font-weight: 300;
+  }
+  
+  .fw-4 {
+    font-weight: 400;
+  }
+  
+  .fw-5 {
+    font-weight: 500;
+  }
+  
+  .fw-6 {
+    font-weight: 600;
+  }
+  
+  .fw-7 {
+    font-weight: 700;
+  }
+  
+  .lh-100 {
+    line-height: 100%;
+  }
+  
+  .lh-110 {
+    line-height: 110%;
+  }
+  
+  .lh-120 {
+    line-height: 120%;
+  }
+  
+  .lh-130 {
+    line-height: 130%;
+  }
+  
+  .lh-140 {
+    line-height: 140%;
+  }
+  
+  .lh-150 {
+    line-height: 150%;
+  }
+  
+  .lh-160 {
+    line-height: 160%;
+  }
+  
+  .ls-1 {
+    letter-spacing: -0.01em;
+  }
+  
+  .ls-0 {
+    letter-spacing: 0em;
+  }
+  
+  .ls-2 {
+    letter-spacing: 0.02em;
+  }
+  
+  .ls-3 {
+    letter-spacing: -0.03em;
+  }
+  
+  .ls-4 {
+    letter-spacing: -0.04em;
+  }
+  
+  .ls-5 {
+    letter-spacing: 0.005em;
+  }
+  
+  .h-220 {
+    height: 220px;
+  }
+  
+  .br-25 {
+    border-radius: 25px;
+  }
+  
+  .br-15 {
+    border-radius: 15px;
+  }
+  
+  /*-------------------------
+    Buttons
+  -------------------------*/
+  
+  /*-------------------------
+    Headings
+  -------------------------*/
+  
+  /*-------------------------
+    Preloader Styles
+  -------------------------*/
+  
+  @keyframes rotate {
+    0% {
+      transform: rotateZ(0deg);
+    }
+  
+    100% {
+      transform: rotateZ(360deg);
+    }
+  }
+  
+  @keyframes drop {
+    50% {
+      height: 45px;
+      opacity: 0;
+    }
+  
+    51% {
+      opacity: 0;
+    }
+  
+    100% {
+      height: 1px;
+      opacity: 0;
+    }
+  }
+  
+  /*-------------------------
+    Color Mode Styles
+  -------------------------*/
+  
+  @keyframes clouds-loop-1 {
+    to {
+      background-position: -1000px 0;
+    }
+  }
+  
+  @keyframes clouds-loop-2 {
+    to {
+      background-position: -1000px 0;
+    }
+  }
+  
+  @keyframes clouds-loop-3 {
+    to {
+      background-position: -1579px 0;
+    }
+  }
+  
+  .recent .recent-slider .slider-block {
+    /* background: url(../media/recent/Italy.png); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    position: relative;
+    text-align: center;
+    margin: 0 15px;
+    overflow: hidden;
+  }
+  
+  .recent .recent-slider .slider-block.block-2 {
+    /* background: url(../media/recent/dubai.png); */
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .recent .recent-slider .slider-block.block-3 {
+    /* background: url(../media/recent/japan.png); */
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .recent .recent-slider .slider-block.block-4 {
+    /* background: url(../media/recent/france.png); */
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .recent .recent-slider .slider-block.block-5 {
+    /* background: url(../media/recent/greece.png); */
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .recent .recent-slider .slider-block .content {
+    width: 100%;
+    height: 100%;
+    padding: 80px 0;
+    background: linear-gradient(145.65deg, rgba(0, 0, 0, 0.8) -4.22%, #FFFFFF -4.21%, rgba(0, 0, 0, 0.5) 35.23%, rgba(0, 0, 0, 0) 142.5%);
+  }
+  
+  .recent .recent-slider .slider-block .content img {
+    object-fit: cover;
+    margin-bottom: 16px;
+    display: inline-block;
+  }
+  
+  .recent .recent-slider .slider-block .content i {
+    font-size: 80px;
+    margin-bottom: 16px;
+    color: #FFFFFF;
+  }
+  
+  .recent .recent-slider .slider-block .content h2 {
+    transition: all 0.5s ease-in-out;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 120%;
+    letter-spacing: 0.005em;
+    color: #FFFFFF;
+    margin-bottom: 0;
+  }
+  
+  .recent .recent-slider .slider-block .content h4 {
+    transition: all 0.5s ease-in-out;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0.005em;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+  }
+  
+  .recent .recent-slider .slider-block .content p {
+    transition: all 0.5s ease-in-out;
+    font-weight: 600;
+    font-size: 57px;
+    line-height: 120%;
+    letter-spacing: -0.005em;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+  }
+  
+  .recent .recent-slider .slider-block .content:hover h2 {
+    transition: all 0.5s ease-in-out;
+    color: #FFAD51;
+  }
+  
+  .recent .recent-slider .slider-block .content:hover h4 {
+    transition: all 0.5s ease-in-out;
+    color: #FFAD51;
+  }
+  
+  .recent .recent-slider .slider-block .content:hover P {
+    color: #FFAD51;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .dark .recent .slick-prev::before,.dark .recent .slick-next::before {
+    color: #FFFFFF;
+  }
+  
+  /*# sourceMappingURL=app.css.map */
+  <!-- search-history end -->
+   <!-- weekly forecast -->
+<section class="atf-weekly-forcast" style="background-image: url(assets/img/bg/6.jpg);  background-size:cover; background-position: center center;">
+    <div class="atf-home-overlay atf-section-padding">
+        <div class="container">
+            <div class="row justify-content-start">
+                <div class="col-lg-5 col-md-7 col-12 text-start">
+                    <div class="atf-section-title wow fadeIn" data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="0" style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s;">
+                        <h5 class="sub-title">Hourly Report</h5>
+                        <h2 class="text-white">Weekly Weather Forcast</h2>
+                    </div>
+                </div><!--- END COL -->
+            </div><!--- END ROW -->
+        
+            <div class="row justify-content-center">
+                <div class="col-lg-12">
+                    <div class="atf-weekly-weather">
+                        <div class="row">
+                            <div class="col-md-2 col-sm-4">
+                                <div class="atf-weather-content style1 text-center">
+                                    <h5>Fri</h5>
+                                    <div class="atf-weather-img">
+                                        <img src="assets/img/icon/2.png" alt="weather">
+                                    </div>
+                                    <div class="atf-weather-percent mt-3">
+                                        <h4 class="my-0">+30 <sup>0</sup></h4>
+                                        <h4 class="my-2">+29 <sup>0</sup></h4>
+                                    </div>
+                                    <div class="atf-fell style1 d-inline-block w-100">
+                                        <h5>ReelFeel</h5>
+                                        <span class="d-block text-white">+25 <sup>0</sup></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-sm-4">
+                                <div class="atf-weather-content style1 text-center">
+                                    <h5>Sat</h5>
+                                    <div class="atf-weather-img">
+                                        <img src="assets/img/icon/1.png" alt="weather">
+                                    </div>
+                                    <div class="atf-weather-percent mt-3">
+                                        <h4 class="my-0">+30 <sup>0</sup></h4>
+                                        <h4 class="my-2">+29 <sup>0</sup></h4>
+                                    </div>
+                                    <div class="atf-fell style1 d-inline-block w-100">
+                                        <h5>ReelFeel</h5>
+                                        <span class="d-block text-white">+25 <sup>0</sup></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-sm-4">
+                                <div class="atf-weather-content style1 text-center">
+                                    <h5>Sun</h5>
+                                    <div class="atf-weather-img">
+                                        <img src="assets/img/icon/2.png" alt="weather">
+                                    </div>
+                                    <div class="atf-weather-percent mt-3">
+                                        <h4 class="my-0">+30 <sup>0</sup></h4>
+                                        <h4 class="my-2">+29 <sup>0</sup></h4>
+                                    </div>
+                                    <div class="atf-fell style1 d-inline-block w-100">
+                                        <h5>ReelFeel</h5>
+                                        <span class="d-block text-white">+25 <sup>0</sup></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-sm-4">
+                                <div class="atf-weather-content style1 text-center">
+                                    <h5>Mon</h5>
+                                    <div class="atf-weather-img">
+                                        <img src="assets/img/icon/3.png" alt="weather">
+                                    </div>
+                                    <div class="atf-weather-percent mt-3">
+                                        <h4 class="my-0">+30 <sup>0</sup></h4>
+                                        <h4 class="my-2">+29 <sup>0</sup></h4>
+                                    </div>
+                                    <div class="atf-fell style1 d-inline-block w-100">
+                                        <h5>ReelFeel</h5>
+                                        <span class="d-block text-white">+25 <sup>0</sup></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-sm-4">
+                                <div class="atf-weather-content style1 text-center">
+                                    <h5>Tue</h5>
+                                    <div class="atf-weather-img">
+                                        <img src="assets/img/icon/4.png" alt="weather">
+                                    </div>
+                                    <div class="atf-weather-percent mt-3">
+                                        <h4 class="my-0">+30 <sup>0</sup></h4>
+                                        <h4 class="my-2">+29 <sup>0</sup></h4>
+                                    </div>
+                                    <div class="atf-fell style1 d-inline-block w-100">
+                                        <h5>ReelFeel</h5>
+                                        <span class="d-block text-white">+25 <sup>0</sup></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-sm-4">
+                                <div class="atf-weather-content style1 text-center">
+                                    <h5>Wed</h5>
+                                    <div class="atf-weather-img">
+                                        <img src="assets/img/icon/3.png" alt="weather">
+                                    </div>
+                                    <div class="atf-weather-percent mt-3">
+                                        <h4 class="my-0">+30 <sup>0</sup></h4>
+                                        <h4 class="my-2">+29 <sup>0</sup></h4>
+                                    </div>
+                                    <div class="atf-fell style1 d-inline-block w-100">
+                                        <h5>ReelFeel</h5>
+                                        <span class="d-block text-white">+25 <sup>0</sup></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--- END COL -->
+            </div><!--- END ROW -->
+            
+            
+            <div class="row">
+                <div class="col-lg-12 col-12">
+                    <div class="tab">
+                     
+
+                        <div class="tab_content">
+                            
+                                
+                                            
+                                          
+                                          
+                        
+                                    
+
+                            <div class="tabs_item">
+                                <h2 class="atf-weather-hlight text-white mb-5"> Tomorrow's Highlights </h2>
+                                <div class="row align-items-center">
+                                    <div class="col-xl-4 col-12">
+                                        <div class="atf-hlight-content">
+                                            <div class="d-flex">
+                                                <div class="atf-weather-icon">
+                                                    <span> 
+                                                        <i class="fa-solid fa-cloud-sun-rain"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="atf-weather-location">
+                                                    <h3> London</h3>
+                                                    <span> Hourly Weather</span>
+                                                </div>
+                                                <div class="atf-weather-deg">  
+                                                    <h2> 12 <sup> 0</sup></h2>
+                                                </div>
+                                            </div>
+                                            
+                                             
+                                            <hr>
+                                            
+                                            
+                                            <div class="atf-sub-weather">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <div class="d-inline-flex">
+                                                            <div class="atf-weather-icon">
+                                                                <span> 
+                                                                    <i class="fas fa-sun"></i> 
+                                                                </span>
+                                                            </div>
+                                                            <div class="atf-weather-location">
+                                                                <h5> Sunrise</h5>
+                                                                <span> 5.45am</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="col-6">
+                                                        <div class="d-inline-flex">
+                                                            <div class="atf-weather-icon">
+                                                                <span> 
+                                                                    <i class="fa-solid fa-cloud-sun"></i>
+                                                                </span>
+                                                            </div>
+                                                            <div class="atf-weather-location">
+                                                                <h5> Sunset</h5>
+                                                                <span> 6.45pm</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="col-6">
+                                                        <div class="d-inline-flex">
+                                                            <div class="atf-weather-icon">
+                                                                <span> 
+                                                                    <i class="fa-solid fa-cloud-rain"></i>
+                                                                </span>
+                                                            </div>
+                                                            <div class="atf-weather-location">
+                                                                <h5> Humidity</h5>
+                                                                <span> 70%</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="col-6">
+                                                        <div class="d-inline-flex">
+                                                            <div class="atf-weather-icon">
+                                                                <span> 
+                                                                    <i class="fa-solid fa-wind"></i>
+                                                                </span>
+                                                            </div>
+                                                            <div class="atf-weather-location">
+                                                                <h5> WindSpeed</h5>
+                                                                <span> 8km/h</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <hr>
+                                            
+                                            <div class="atf-weather-sub-content text-center pt-2">
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <div class="atf-weather-content">
+                                                            <h5> Sat </h5>
+                                                            <div class="atf-weather-img">
+                                                                <img src="assets/img/icon/1.png" alt="weather">
+                                                            </div>
+                                                            
+                                                            <div class="atf-weather-percent mt-2">
+                                                                <h4> +30 <sup>0</sup> </h4>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <div class="atf-weather-content text-center">
+                                                            <h5> Sun </h5>
+                                                            <div class="atf-weather-img">
+                                                                <img src="assets/img/icon/2.png" alt="weather">
+                                                            </div>
+                                                            
+                                                            <div class="atf-weather-percent mt-2">
+                                                                <h4> +30 <sup>0</sup> </h4>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <div class="atf-weather-content text-center">
+                                                            <h5> Mon </h5>
+                                                            <div class="atf-weather-img">
+                                                                <img src="assets/img/icon/3.png" alt="weather">
+                                                            </div>
+                                                            
+                                                            <div class="atf-weather-percent mt-2">
+                                                                <h4> +30 <sup>0</sup> </h4>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-8 mt-xl-40">
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <div class="atf-weather-report">
+                                                    <div class="atf-report-img">
+                                                        <img src="assets/img/icon/3.png" alt="weather">
+                                                    </div>
+                                                    <h3> UV Index </h3>
+                                                    <div class="atf-weather-number">
+                                                        <span>123</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                        
+                                            <div class="col-4">
+                                                <div class="atf-weather-report">
+                                                    <h3> WindSpeed </h3>
+                                                    <h2> 9.30 <sub>  Km/h </sub> </h2>
+                                                </div>
+                                            </div>
+              
+                                            <div class="col-4">
+                                                <div class="atf-weather-report">
+                                                    <h3> Sunrise &amp; set </h3>
+                                                    <div class="atf-sunset">
+                                                        <h6> <i class="fas fa-moon"></i> 05:25 am </h6>
+                                                    </div>
+                                                    <div class="atf-sunset">
+                                                      <h6> <i class="fas fa-sun"></i> 05:35 pm </h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-4">
+                                                <div class="atf-weather-report">
+                                                    <h3>Humidity </h3>
+                                                    <h2> 85 <sup>  % </sup> </h2>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-4">
+                                                <div class="atf-weather-report">
+                                                    <h3> Visibility </h3>
+                                                    <h2> 9.5 <sup> Km </sup>  </h2>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-4">
+                                                <div class="atf-weather-report">
+                                                    <h3> Air Speed </h3>
+                                                    <h2> 120  </h2>
+                                                </div>
+                                            </div>
+                                        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!--- END TAB ITEM -->
+                        </div><!--- END TAB CONTENT -->
+                    </div>
+                </div><!--- END COL -->
+            </div><!--- END ROW -->				
+        </div><!--- END CONTAINER -->
+    </div>
+</section>--hour-component end
+
+
+  <!-- home-component-start -->
+
+
+  
+  <section id="home" class="atf-home-area atf-align-items-details atf-width-area" style="background-image: url(assets/img/bg/1.jpg);background-size:cover; background-position: center center;">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 pe-lg-5">
+                <div class="atf-single-details text-start">
+                    <h2>Climate Change <br>Weather Forcast </h2>
+                    <p class="border-left ps-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed <br> do elit eiusmod tempor incididunt ut labore et dolore.</p>
+
+                    <!-- Mailchamp-btn -->
+                    <div class="atf-search-area">
+                        <form class="form-group"(submit)="onSearch(); $event.preventDefault()">
+                            <input type="search" name="search" class="form-control" [(ngModel)]="searchCity" id="Search" placeholder="Search..." required="required">
+                            <button type="submit" class="atf-themes-btn">
+                            <span></span><span></span><span></span><span></span>Search now</button>
+                        </form>
+                    </div>
+                </div>
+            </div><!--- END COL -->
+            
+            
+            <div class="col-lg-6 mt-lg-40">
+                <div class="atf-weather swiper mySwiper swiper-cards swiper-3d swiper-initialized swiper-horizontal swiper-watch-progress">
+                    <div class="swiper-wrapper" id="swiper-wrapper-635f7e64a23cadd3" aria-live="off" style="cursor: grab; transition-duration: 0ms; transition-delay: 0ms;">
+                        <div class="swiper-slide swiper-slide-visible swiper-slide-fully-visible swiper-slide-active" role="group" aria-label="1 / 5" style="width: 350px; z-index: 5; transform: translate3d(0px, 0px, 0px) rotateZ(0deg) scale(1); transition-duration: 0ms;">
+                            <div class="atf-hlight-content style1">
+                                <div class="d-flex">
+                                    <div class="atf-weather-icon">
+                                        <span class="text-white"> 
+                                            <i class="fa-solid fa-cloud-sun-rain"></i>
+                                        </span>
+                                    </div>
+                                    <div class="atf-weather-location">
+                                        <h3 class="text-white"> {{ weatherData?.location }}</h3>
+                                        <span class="text-white"> Today</span>
+                                    </div>
+                                    <div class="atf-weather-deg">  
+                                        <h2 class="text-white"> 12 <sup> 0</sup></h2>
+                                    </div>
+                                </div>
+                                
+                                 
+                                <hr>
+                                
+                                
+                                <div class="atf-sub-weather">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="d-inline-flex">
+                                                <div class="atf-weather-icon">
+                                                    <span class="text-white"> 
+                                                        <i class="fas fa-sun"></i> 
+                                                    </span>
+                                                </div>
+                                                <div class="atf-weather-location">
+                                                    <h5 class="text-white"> Sunrise</h5>
+                                                    <span class="text-white">{{ weatherData.sunrise }}</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-6">
+                                            <div class="d-inline-flex">
+                                                <div class="atf-weather-icon">
+                                                    <span class="text-white"> 
+                                                        <i class="fa-solid fa-cloud-sun"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="atf-weather-location">
+                                                    <h5 class="text-white"> Sunset</h5>
+                                                    <span class="text-white">{{ weatherData.sunset }}</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-6">
+                                            <div class="d-inline-flex">
+                                                <div class="atf-weather-icon">
+                                                    <span class="text-white"> 
+                                                        <i class="fa-solid fa-cloud-rain"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="atf-weather-location">
+                                                    <h5 class="text-white"> Humidity</h5>
+                                                    <span class="text-white">{{ weatherData.humidity }}</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-6">
+                                            <div class="d-inline-flex">
+                                                <div class="atf-weather-icon">
+                                                    <span class="text-white"> 
+                                                        <i class="fa-solid fa-wind"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="atf-weather-location">
+                                                    <h5 class="text-white"> WindSpeed</h5>
+                                                    <span class="text-white"> {{ weatherData.wind_speed }}</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <hr>
+                            
+                                <div class="atf-weather-sub-content text-center pt-2">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <div class="atf-weather-content">
+                                                <h5> Sat </h5>
+                                                <div class="atf-weather-img">
+                                                    <img src="assets/img/icon/1.png" alt="weather">
+                                                </div>
+                                                
+                                                <div class="atf-weather-percent mt-2">
+                                                    <h4> +30 <sup>0</sup> </h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="atf-weather-content text-center">
+                                                <h5> Sun </h5>
+                                                <div class="atf-weather-img">
+                                                    <img src="assets/img/icon/2.png" alt="weather">
+                                                </div>
+                                                
+                                                <div class="atf-weather-percent mt-2">
+                                                    <h4> +30 <sup>0</sup> </h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="atf-weather-content text-center">
+                                                <h5> Mon </h5>
+                                                <div class="atf-weather-img">
+                                                    <img src="assets/img/icon/3.png" alt="weather">
+                                                </div>
+                                                
+                                                <div class="atf-weather-percent mt-2">
+                                                    <h4> +30 <sup>0</sup> </h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                      
+                        <div class="swiper-slide-shadow swiper-slide-shadow-cards" style="opacity: 1; transition-duration: 0ms;"></div></div><!--- END SLIDER -->
+                    </div><!--- END Wrapper SLIDER -->
+                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+            </div><!--- END COL -->
+        </div><!--- END ROW -->
+    </div><!--- END CONTAINER -->
+</section>
+
+
+
+<!-- weekly forecast -->
+<section class="atf-weekly-forcast" style="background-image: url(assets/img/bg/6.jpg);  background-size:cover; background-position: center center;">
+    <div class="atf-home-overlay atf-section-padding">
+        <div class="container">
+            <div class="row justify-content-start">
+                <div class="col-lg-5 col-md-7 col-12 text-start">
+                    <div class="atf-section-title wow fadeIn" data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="0" style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s;">
+                        <h5 class="sub-title">Hourly Report</h5>
+                        <h2 class="text-white">Weekly Weather Forcast</h2>
+                    </div>
+                </div><!--- END COL -->
+            </div><!--- END ROW -->
+        
+            <div class="row justify-content-center">
+                <div class="col-lg-12">
+                    <div class="atf-weekly-weather">
+                        <div class="row">
+                            <div class="col-md-2 col-sm-4">
+                                <div class="atf-weather-content style1 text-center">
+                                    <h5>Fri</h5>
+                                    <div class="atf-weather-img">
+                                        <img src="assets/img/icon/2.png" alt="weather">
+                                    </div>
+                                    <div class="atf-weather-percent mt-3">
+                                        <h4 class="my-0">+30 <sup>0</sup></h4>
+                                        <h4 class="my-2">+29 <sup>0</sup></h4>
+                                    </div>
+                                    <div class="atf-fell style1 d-inline-block w-100">
+                                        <h5>ReelFeel</h5>
+                                        <span class="d-block text-white">+25 <sup>0</sup></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-sm-4">
+                                <div class="atf-weather-content style1 text-center">
+                                    <h5>Sat</h5>
+                                    <div class="atf-weather-img">
+                                        <img src="assets/img/icon/1.png" alt="weather">
+                                    </div>
+                                    <div class="atf-weather-percent mt-3">
+                                        <h4 class="my-0">+30 <sup>0</sup></h4>
+                                        <h4 class="my-2">+29 <sup>0</sup></h4>
+                                    </div>
+                                    <div class="atf-fell style1 d-inline-block w-100">
+                                        <h5>ReelFeel</h5>
+                                        <span class="d-block text-white">+25 <sup>0</sup></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-sm-4">
+                                <div class="atf-weather-content style1 text-center">
+                                    <h5>Sun</h5>
+                                    <div class="atf-weather-img">
+                                        <img src="assets/img/icon/2.png" alt="weather">
+                                    </div>
+                                    <div class="atf-weather-percent mt-3">
+                                        <h4 class="my-0">+30 <sup>0</sup></h4>
+                                        <h4 class="my-2">+29 <sup>0</sup></h4>
+                                    </div>
+                                    <div class="atf-fell style1 d-inline-block w-100">
+                                        <h5>ReelFeel</h5>
+                                        <span class="d-block text-white">+25 <sup>0</sup></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-sm-4">
+                                <div class="atf-weather-content style1 text-center">
+                                    <h5>Mon</h5>
+                                    <div class="atf-weather-img">
+                                        <img src="assets/img/icon/3.png" alt="weather">
+                                    </div>
+                                    <div class="atf-weather-percent mt-3">
+                                        <h4 class="my-0">+30 <sup>0</sup></h4>
+                                        <h4 class="my-2">+29 <sup>0</sup></h4>
+                                    </div>
+                                    <div class="atf-fell style1 d-inline-block w-100">
+                                        <h5>ReelFeel</h5>
+                                        <span class="d-block text-white">+25 <sup>0</sup></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-sm-4">
+                                <div class="atf-weather-content style1 text-center">
+                                    <h5>Tue</h5>
+                                    <div class="atf-weather-img">
+                                        <img src="assets/img/icon/4.png" alt="weather">
+                                    </div>
+                                    <div class="atf-weather-percent mt-3">
+                                        <h4 class="my-0">+30 <sup>0</sup></h4>
+                                        <h4 class="my-2">+29 <sup>0</sup></h4>
+                                    </div>
+                                    <div class="atf-fell style1 d-inline-block w-100">
+                                        <h5>ReelFeel</h5>
+                                        <span class="d-block text-white">+25 <sup>0</sup></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-sm-4">
+                                <div class="atf-weather-content style1 text-center">
+                                    <h5>Wed</h5>
+                                    <div class="atf-weather-img">
+                                        <img src="assets/img/icon/3.png" alt="weather">
+                                    </div>
+                                    <div class="atf-weather-percent mt-3">
+                                        <h4 class="my-0">+30 <sup>0</sup></h4>
+                                        <h4 class="my-2">+29 <sup>0</sup></h4>
+                                    </div>
+                                    <div class="atf-fell style1 d-inline-block w-100">
+                                        <h5>ReelFeel</h5>
+                                        <span class="d-block text-white">+25 <sup>0</sup></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--- END COL -->
+            </div><!--- END ROW -->
+            
+            
+            <div class="row">
+                <div class="col-lg-12 col-12">
+                    <div class="tab">
+                     
+
+                        <div class="tab_content">
+                            
+                                
+                                            
+                                          
+                                          
+                        
+                                    
+
+                            <div class="tabs_item">
+                                <h2 class="atf-weather-hlight text-white mb-5"> Tomorrow's Highlights </h2>
+                                <div class="row align-items-center">
+                                    <div class="col-xl-4 col-12">
+                                        <div class="atf-hlight-content">
+                                            <div class="d-flex">
+                                                <div class="atf-weather-icon">
+                                                    <span> 
+                                                        <i class="fa-solid fa-cloud-sun-rain"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="atf-weather-location">
+                                                    <h3> London</h3>
+                                                    <span> Hourly Weather</span>
+                                                </div>
+                                                <div class="atf-weather-deg">  
+                                                    <h2> 12 <sup> 0</sup></h2>
+                                                </div>
+                                            </div>
+                                            
+                                             
+                                            <hr>
+                                            
+                                            
+                                            <div class="atf-sub-weather">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <div class="d-inline-flex">
+                                                            <div class="atf-weather-icon">
+                                                                <span> 
+                                                                    <i class="fas fa-sun"></i> 
+                                                                </span>
+                                                            </div>
+                                                            <div class="atf-weather-location">
+                                                                <h5> Sunrise</h5>
+                                                                <span> 5.45am</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="col-6">
+                                                        <div class="d-inline-flex">
+                                                            <div class="atf-weather-icon">
+                                                                <span> 
+                                                                    <i class="fa-solid fa-cloud-sun"></i>
+                                                                </span>
+                                                            </div>
+                                                            <div class="atf-weather-location">
+                                                                <h5> Sunset</h5>
+                                                                <span> 6.45pm</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="col-6">
+                                                        <div class="d-inline-flex">
+                                                            <div class="atf-weather-icon">
+                                                                <span> 
+                                                                    <i class="fa-solid fa-cloud-rain"></i>
+                                                                </span>
+                                                            </div>
+                                                            <div class="atf-weather-location">
+                                                                <h5> Humidity</h5>
+                                                                <span> 70%</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="col-6">
+                                                        <div class="d-inline-flex">
+                                                            <div class="atf-weather-icon">
+                                                                <span> 
+                                                                    <i class="fa-solid fa-wind"></i>
+                                                                </span>
+                                                            </div>
+                                                            <div class="atf-weather-location">
+                                                                <h5> WindSpeed</h5>
+                                                                <span> 8km/h</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <hr>
+                                            
+                                            <div class="atf-weather-sub-content text-center pt-2">
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <div class="atf-weather-content">
+                                                            <h5> Sat </h5>
+                                                            <div class="atf-weather-img">
+                                                                <img src="assets/img/icon/1.png" alt="weather">
+                                                            </div>
+                                                            
+                                                            <div class="atf-weather-percent mt-2">
+                                                                <h4> +30 <sup>0</sup> </h4>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <div class="atf-weather-content text-center">
+                                                            <h5> Sun </h5>
+                                                            <div class="atf-weather-img">
+                                                                <img src="assets/img/icon/2.png" alt="weather">
+                                                            </div>
+                                                            
+                                                            <div class="atf-weather-percent mt-2">
+                                                                <h4> +30 <sup>0</sup> </h4>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <div class="atf-weather-content text-center">
+                                                            <h5> Mon </h5>
+                                                            <div class="atf-weather-img">
+                                                                <img src="assets/img/icon/3.png" alt="weather">
+                                                            </div>
+                                                            
+                                                            <div class="atf-weather-percent mt-2">
+                                                                <h4> +30 <sup>0</sup> </h4>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-8 mt-xl-40">
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <div class="atf-weather-report">
+                                                    <div class="atf-report-img">
+                                                        <img src="assets/img/icon/3.png" alt="weather">
+                                                    </div>
+                                                    <h3> UV Index </h3>
+                                                    <div class="atf-weather-number">
+                                                        <span>123</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                        
+                                            <div class="col-4">
+                                                <div class="atf-weather-report">
+                                                    <h3> WindSpeed </h3>
+                                                    <h2> 9.30 <sub>  Km/h </sub> </h2>
+                                                </div>
+                                            </div>
+              
+                                            <div class="col-4">
+                                                <div class="atf-weather-report">
+                                                    <h3> Sunrise &amp; set </h3>
+                                                    <div class="atf-sunset">
+                                                        <h6> <i class="fas fa-moon"></i> 05:25 am </h6>
+                                                    </div>
+                                                    <div class="atf-sunset">
+                                                      <h6> <i class="fas fa-sun"></i> 05:35 pm </h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-4">
+                                                <div class="atf-weather-report">
+                                                    <h3>Humidity </h3>
+                                                    <h2> 85 <sup>  % </sup> </h2>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-4">
+                                                <div class="atf-weather-report">
+                                                    <h3> Visibility </h3>
+                                                    <h2> 9.5 <sup> Km </sup>  </h2>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-4">
+                                                <div class="atf-weather-report">
+                                                    <h3> Air Speed </h3>
+                                                    <h2> 120  </h2>
+                                                </div>
+                                            </div>
+                                        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!--- END TAB ITEM -->
+                        </div><!--- END TAB CONTENT -->
+                    </div>
+                </div><!--- END COL -->
+            </div><!--- END ROW -->				
+        </div><!--- END CONTAINER -->
+    </div>
+</section>
+home.component.ts
+import { Component } from '@angular/core';
+import { WeatherService } from '../weather.service';
+
+@Component({
+  selector: 'app-home-component',
+  templateUrl: './home-component.component.html',
+  styleUrls: ['./home-component.component.css']
+})
+export class HomeComponentComponent {
+  weatherData: any = null; // Ensure initial state is null
+  searchCity: string = 'London';
+
+  constructor(private weatherService: WeatherService) {}
+
+  ngOnInit(): void {
+    this.fetchWeather(); // Load default city weather
+  }
+
+  fetchWeather(): void {
+    this.weatherService.getWeather(this.searchCity.trim()).subscribe(
+      data => {
+        if (data.error) {
+          console.error('Error fetching weather:', data.error);
+          this.weatherData = null;
+        } else {
+          this.weatherData = data;
+        }
+      },
+      error => {
+        console.error('API Error:', error);
+        this.weatherData = null;
+      }
+    );
+  }
+
+  onSearch(): void {
+    if (this.searchCity.trim() === '') return; // Prevent empty searches
+    this.fetchWeather();
+  }
+}
+weather-service
+import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+
+@Injectable({
+  providedIn: 'root',
+})
+export class WeatherService {
+  private apiUrl = 'http://localhost/weather-app/php/weather.php'; // Your backend URL
+
+  constructor(private http: HttpClient) {}
+
+  getWeather(city: string = 'London'): Observable<any> {
+    return this.http.get<any>(`${this.apiUrl}?city=${city}`);
+  }
+}
+
+<app-search-history></app-search-history>
+weather.php
+<?php
+header("Access-Control-Allow-Origin: *");
+header("Content-Type: application/json");
+
+// Your OpenWeather API Key
+$apiKey = "b0cd2c2531cae2334574b4cb275c15ac";
+
+// Get city from request or use default "London"
+$city = isset($_GET['city']) ? $_GET['city'] : 'London';
+$city = urlencode($city); // Handle spaces in city names
+
+// Fetch weather data from OpenWeather API
+$url = "https://api.openweathermap.org/data/2.5/weather?q={$city}&appid={$apiKey}&units=metric";
+$response = file_get_contents($url);
+
+if (!$response) {
+    echo json_encode(["error" => "Unable to fetch weather data"]);
+    exit;
+}
+
+$data = json_decode($response, true);
+
+// Check if data is valid
+if (!isset($data['main'])) {
+    echo json_encode(["error" => "Invalid response from API"]);
+    exit;
+}
+
+// Extract necessary details
+$weather = [
+    "location" => urldecode($city),
+    "temperature" => $data['main']['temp'] . "°C",
+    "condition" => $data['weather'][0]['description'],
+    "humidity" => $data['main']['humidity'] . "%",
+    "wind_speed" => $data['wind']['speed'] . " km/h",
+    "sunrise" => date("h:i A", $data['sys']['sunrise']),
+    "sunset" => date("h:i A", $data['sys']['sunset']),
+    "forecast" => [] // Placeholder for forecast data
+];
+
+// Fetch 3-day forecast
+$forecastUrl = "https://api.openweathermap.org/data/2.5/forecast?q={$city}&appid={$apiKey}&units=metric";
+$forecastResponse = file_get_contents($forecastUrl);
+
+if ($forecastResponse) {
+    $forecastData = json_decode($forecastResponse, true);
+    if (isset($forecastData['list'])) {
+        $forecast = [];
+        for ($i = 1; $i <= 3; $i++) {
+            $index = $i * 8 - 1; // Fetch data at 24-hour intervals
+            if (isset($forecastData['list'][$index])) {
+                $forecast[] = [
+                    "day" => date("D", $forecastData['list'][$index]['dt']),
+                    "temperature" => $forecastData['list'][$index]['main']['temp'] . "°C"
+                ];
+            }
+        }
+        $weather['forecast'] = $forecast;
+    }
+}
+
+// Output JSON response
+echo json_encode($weather);
+?>
