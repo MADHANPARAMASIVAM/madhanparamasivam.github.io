@@ -1,0 +1,4352 @@
+
+
+<!doctype html>
+<html lang="zxx">
+
+<head>
+
+    <!--========= Required meta tags =========-->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Edubost - University and College HTML Template</title>
+
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="images/x-icon"/>
+
+    <!-- css include -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/odometer.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/recoleta-font.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    
+
+<script src="baseurl.js">
+ 
+</script>
+
+    <style>
+        .light-green-back{
+          background-color:#f2f8f1 !important;  
+        }
+        .home-three{
+            overflow-x: hidden;
+        }
+        header #header-white #site-brand-wrapper{
+           background: url("https://www.shutterstock.com/image-photo/real-watercolor-paper-texture-aquarelle-260nw-2413542665.jpg") !important; 
+/*            little dark*/
+/*          background-color: #c5e1a5a1 !important;*/
+/*background-color:#c5e1a53b !important;*/
+/*         background-color:  #C9FDD7!important;*/
+        }
+    </style>
+<!-- mobile toogle css -->
+<style>
+
+
+@media (max-width: 1180px) {
+     .xb-item--content{
+        padding-right: 0px !important;
+      }
+      .body-class {
+        margin-top:0 !important;
+      }
+}
+#main-aside-wrapper {
+  grid-area: main-aside-wrapper;
+}
+@media (max-width: 767px) {
+    
+
+      .news-wrap .xb-item--img img{
+       height:  auto !important;
+      }
+  #main-aside-wrapper {
+    display: block;
+    margin: 0;
+  }
+}
+#main-aside-wrapper .grid-wrapper-min-max {
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+@media (max-width: 1023px) {
+  #main-aside-wrapper[style] {
+    margin-top: 0 !important;
+  }
+}
+
+/* MOBILE-NAV-BAR - SLIDING SIDE NAV */
+/* mobile-nav-bar */
+nav#main-mobile {
+  display: none;
+  float: right;
+  margin: 0;
+  padding: 0;
+  width: 40px;
+  background: none;
+}
+@media (max-width: 1023px) {
+  nav#main-mobile {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 1023px) {
+  #main-mobile .container-fluid .container {
+    padding: 0 15px;
+    width: 100%;
+  }
+}
+
+nav#main-mobile .menu-bar {
+  display: block;
+  margin: 6px 0;
+  width: 35px;
+  height: 5px;
+  background: #bbbbbb;
+}
+
+/* mobile - menu-button */
+#menu-button-mobile {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 40px;
+  height: 45px;
+  border: none !important;
+  background: none;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.5s ease-in-out opacity;
+  -moz-transition: 0.5s ease-in-out opacity;
+  -o-transition: 0.5s ease-in-out opacity;
+  transition: 0.5s ease-in-out opacity;
+  outline: 0;
+  opacity: 0.8;
+  cursor: pointer;
+}
+#menu-button-mobile:hover {
+  background: none;
+  opacity: 1;
+}
+
+#menu-button-mobile:hover span.menu-bar-one,
+#menu-button-mobile:hover span.menu-bar-two,
+#menu-button-mobile:hover span.menu-bar-three,
+#menu-button-mobile:hover span.menu-bar-four {
+  background-color: #bbbbbb;
+}
+
+#menu-button-mobile:hover span.menu-text {
+  color: #bbbbbb;
+}
+
+#menu-button-mobile span.menu-bar-one,
+#menu-button-mobile span.menu-bar-two,
+#menu-button-mobile span.menu-bar-three,
+#menu-button-mobile span.menu-bar-four {
+  display: block;
+  position: absolute;
+  margin: 0;
+  height: 5px;
+  width: 100%;
+  background-color: #bbbbbb;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
+/* menu-bar spans */
+#menu-button-mobile span.menu-bar-one {
+  top: 0px;
+}
+
+#menu-button-mobile span.menu-bar-two, #menu-button-mobile span.menu-bar-three {
+  top: 10px;
+}
+
+#menu-button-mobile span.menu-bar-four {
+  top: 20px;
+}
+
+#menu-button-mobile.open span.menu-bar-one {
+  top: 9px;
+  width: 0%;
+  left: 50%;
+}
+
+#menu-button-mobile.open span.menu-bar-two {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#menu-button-mobile.open span.menu-bar-three {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+#menu-button-mobile.open span.menu-bar-four {
+  top: 10px;
+  width: 0%;
+  left: 50%;
+}
+
+#menu-button-mobile > span.menu-text {
+  color: #bbbbbb;
+}
+
+span.menu-text, span.search-text {
+  display: block;
+  margin-top: 0.5em;
+  font-size: clamp(0.95rem, 0.95rem + 3.5vw, 0.95rem);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+span.menu-text {
+  position: absolute;
+  bottom: -4px;
+  width: 100%;
+  font-size: clamp(0.75rem, 0.75rem + 3.5vw, 0.75rem);
+}
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+#side-nav {
+  position: fixed;
+  top: 0;
+  left: -70vw;
+  width: 70vw;
+  max-width: 70vw;
+  height: auto;
+  min-height: 100vh;
+  overflow: auto;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  z-index: 10002;
+  -moz-transition: all 300ms;
+  -o-transition: all 300ms;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+@media (max-width: 1023px) {
+  #side-nav {
+    left: -85vw;
+    width: 85vw;
+    max-width: 85vw;
+  }
+}
+@media (max-width: 735px) {
+  #side-nav {
+    left: -70vw;
+    width: 70vw;
+    max-width: 70vw;
+  }
+}
+
+/* MOVE BODY
+body.active {
+    -moz-transform: translateX(-220px);
+    -ms-transform: translateX(-220px);
+    -webkit-transform: translateX(-220px);
+    transform: translateX(-220px);
+  }
+*/
+body.active {
+  height: 50% !important;
+  min-height: 50% !important;
+  overflow: hidden !important;
+}
+
+body.active #main-content-start {
+  overflow: hidden;
+}
+
+body.active #side-nav {
+  display: none;
+}
+@media (max-width: 1023px) {
+  body.active #side-nav {
+    display: block;
+    -moz-transform: translateX(85vw);
+    -ms-transform: translateX(85vw);
+    -webkit-transform: translateX(85vw);
+    transform: translateX(85vw);
+    height: 100vh;
+    overflow: scroll;
+  }
+}
+@media (max-width: 735px) {
+  body.active #side-nav {
+    -moz-transform: translateX(70vw);
+    -ms-transform: translateX(70vw);
+    -webkit-transform: translateX(70vw);
+    transform: translateX(70vw);
+  }
+}
+
+#sidenav-inner-wrapper {
+  padding: 2rem 2rem 150px 2rem;
+  /* V1 menu */
+  padding: 2rem;
+  /* V2 layered menu */
+}
+
+#global-ctas {
+  padding: 2rem 0 0;
+}
+
+#global-ctas > button {
+  width: 100%;
+  margin-bottom: 10px;
+    color: #fff;
+    background: #5a0722;
+}
+#global-ctas > button:hover {
+  color: #420519;
+  outline-style: solid;
+  outline-offset: -3px;
+  outline: 3px solid #eaaa00;
+}
+
+/* The navigation menu links */
+#side-nav a,
+#side-nav h4.minimalist-accordion__title {
+  display: block;
+  padding: 0.75rem;
+  text-decoration: none;
+  font-family: "Antenna Condensed Light", sans-serif;
+  font-size: clamp(1.125rem, 1.125rem + 3.5vw, 1.125rem) !important;
+  color: #bbbbbb;
+  text-transform: uppercase;
+  border-bottom: solid 1px #555555;
+  transition: 0.3s;
+}
+#side-nav a button,
+#side-nav h4.minimalist-accordion__title button {
+  padding: 0.75rem;
+  font-size: clamp(0.95rem, 0.95rem + 3.5vw, 0.95rem);
+  color: #bbbbbb !important;
+  border-bottom: none !important;
+  width: 100%;
+}
+#side-nav a:focus,
+#side-nav h4.minimalist-accordion__title:focus {
+  outline-style: solid;
+  outline-offset: -3px;
+  outline: 3px solid #febc18;
+}
+#side-nav a:hover,
+#side-nav h4.minimalist-accordion__title:hover {
+  background: rgba(128, 128, 128, 0.3);
+  background: #131313 !important;
+}
+
+#side-nav button.minimalist-accordion__header:hover,
+#side-nav button.minimalist-noanim-accordion__header:hover,
+#side-nav button.minimalist-css-accordion__header:hover,
+#side-nav button.minimalist-accordion__header:focus,
+#side-nav button.minimalist-noanim-accordion__header:focus,
+#side-nav button.minimalist-css-accordion__header:focus {
+  background: #1a1a1a !important;
+}
+
+#side-nav h4.minimalist-accordion__title {
+  padding: 0;
+}
+#side-nav h4.minimalist-accordion__title :after {
+  position: relative;
+  top: 0.25rem;
+  right: 1.5rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  font-size: clamp(1rem, 1rem + 3.5vw, 1rem);
+  line-height: 0;
+  content: ">";
+  font-family: "Antenna Condensed Bold";
+  color: #bbbbbb !important;
+  transform-origin: center center;
+  transform: rotate(90deg);
+  background-image: none !important;
+}
+
+#side-nav [aria-expanded=true].minimalist-accordion__header::after {
+  top: 0.25rem;
+  right: 1.85rem;
+}
+
+#side-nav .minimalist-accordion__panel {
+  margin: 0;
+  padding: 0;
+  font-size: clamp(1rem, 1rem + 3.5vw, 1rem) !important;
+}
+#side-nav .minimalist-accordion__panel a {
+  text-transform: none;
+  background: #1a1a1a;
+}
+#side-nav .minimalist-accordion__panel a:hover {
+  background: #0b0b0b !important;
+}
+
+#side-nav p {
+  text-transform: none;
+  background: none;
+  color: #bbbbbb;
+}
+
+/* Position and style the close button (top right corner) */
+#side-nav-close {
+  position: relative;
+  margin: 0;
+  width: 36px;
+  height: auto;
+  border-bottom: none;
+  opacity: 0.5;
+}
+
+/* On smaller screens, where height is less than 450px,
+change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  #side-nav {
+    padding-top: 15px;
+  }
+
+  #side-nav a {
+    font-size: clamp(1.5rem, 1.5rem + 3.5vw, 1.5rem) !important;
+  }
+}
+/* side nav - footer address */
+#side-nav #footer-address {
+  display: block;
+  margin: 20px 0;
+  font-family: "Arial", sans-serif;
+  font-size: clamp(0.95rem, 0.95rem + 3.5vw, 0.95rem);
+  color: #888888;
+}
+
+#side-nav #footer-address span {
+  display: block;
+  margin: 0 0 8px 0;
+  width: 100%;
+}
+
+#side-nav #footer-address span#fnorg {
+  color: #bbbbbb;
+  text-transform: uppercase;
+}
+
+#side-nav #footer-address span#locality,
+#side-nav #footer-address span.region,
+#side-nav #footer-address span.postal-code {
+  display: inline;
+  width: auto;
+}
+
+#side-nav #footer-address a.email {
+  margin: 20px 0;
+  padding: 5px 10px;
+  height: 30px;
+  font-size: clamp(0.85rem, 0.85rem + 3.5vw, 0.85rem);
+  text-align: center;
+  color: #bbbbbb;
+  border: solid 1px #888888;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.15);
+  transition: all 0.2;
+}
+#side-nav #footer-address a.email:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.copyright p {
+  font-size: clamp(1rem, 1rem + 3.5vw, 1rem);
+  color: #bbbbbb;
+}
+
+#side-nav-close img {
+  width: 70%;
+}
+
+/* side nav - search */
+#side-nav-search-wrapper {
+  margin: 10px 0 20px;
+  padding: 0;
+}
+
+#side-nav-search-wrapper form {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background: none;
+}
+
+#side-nav-search-wrapper form input {
+  margin: 0;
+  padding: 20px;
+  height: 40px;
+  width: 85%;
+  background: #bbbbbb;
+  border: none;
+}
+
+#side-nav-search-wrapper form input {
+  font-size: clamp(1.125rem, 1.125rem + 3.5vw, 1.125rem);
+  text-transform: uppercase;
+  border-radius: 0.33rem 0 0 0.33rem;
+}
+#side-nav-search-wrapper form input ::placeholder {
+  color: red !important;
+}
+
+#side-nav form input::placeholder {
+  color: #555555;
+}
+
+#side-nav-search-wrapper form button {
+  float: right;
+  position: relative;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 8px 12px;
+  width: 15%;
+  height: 40px;
+  font-size: clamp(1.125rem, 1.125rem + 3.5vw, 1.125rem);
+  outline: 0 none;
+  border-radius: 0 0.33rem 0.33rem 0;
+  background-color: #5a0722;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+#side-nav-search-wrapper form button:hover {
+  color: #a2a2a2;
+  background-color: #2b0310;
+}
+#side-nav-search-wrapper form button i.fa-search:before {
+  top: 30 !important;
+}
+
+#side-nav-search-wrapper #search-label {
+  font-size: 0.015em;
+}
+
+/* MAIN NAV */
+@media (max-width: 1023px) {
+  nav#main,
+nav#audience-directory,
+#site-brand-wrapper #brand {
+    display: none;
+  }
+}
+
+:focus, :focus::not(div) {
+  outline: 3px solid #eaaa00;
+  outline-offset: -3px;
+}
+
+nav,
+#site-brand-wrapper,
+#audience-navigation,
+#directory-navigation {
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #5a0722;
+}
+
+#site-brand-wrapper {
+  background-color: #555555;
+}
+
+nav#main {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  background-color: #555555;
+  box-shadow: 0 0 0.35rem rgba(0, 0, 0, 0.35);
+  z-index: 10000;
+}
+
+nav ul#directory-nav[role=menubar],
+nav#main ul#cta-nav[role=menubar] {
+  float: right;
+}
+
+
+
+
+
+@media (max-width: 1023px) {
+  nav#main,
+nav#audience-directory,
+#site-brand-wrapper #brand {
+    display: none;
+  }
+}
+
+/* added for t4 nav */
+header #brand {
+  margin: 0 5px;
+}
+
+ul.multilevel-linkul-0 button a {
+  padding: 0;
+}
+
+ul.multilevel-linkul-0 {
+  float: left;
+  display: none;
+  position: absolute;
+  top: 53px;
+  left: -1px;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  z-index: 0;
+}
+
+ul.multilevel-linkul-0 li {
+  float: left;
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-left: solid 1px #222222;
+}
+
+ul.multilevel-linkul-0 li a {
+  float: left;
+  display: block;
+  margin: 0;
+  padding: 1rem 1.25rem 1rem;
+  width: 20rem;
+/*  font-family: "Antenna Condensed Bold", sans-serif;*/
+  font-size: 0.8rem;
+  letter-spacing: 0.0125rem;
+  color: #eeeeee;
+  text-align: left;
+  text-transform: none;
+  text-decoration: none;
+  border: 0 none;
+  border-bottom: solid 1px #888888;
+  transition: background-color 0.3s;
+}
+
+ul.multilevel-linkul-1 {
+  display: none;
+}
+
+#site-nav > li > button:hover > a,
+#site-nav > li > button:focus > a {
+  background: none !important;
+}
+
+#pagecontentonlyHtml {
+  display: none;
+}
+
+/* CSS - END */
+/* SECONDARY NAV */
+nav#secondary {
+  float: none;
+  margin-right: 2rem;
+  padding: 2em;
+  border-radius: 0.75rem 0 0 0.75rem;
+  background: #e1e1e1 !important;
+}
+nav#secondary a, nav#secondary h4 {
+  display: block;
+  margin: 0;
+  padding: 1.25rem 0.5rem 1rem;
+  width: 100%;
+  font-family: "Antenna", sans-serif;
+  font-size: clamp(0.75rem, 0.75rem + 3.5vw, 0.75rem);
+  line-height: clamp(1.75rem, 1.75rem + 3.5vw, 1.75rem) !important;
+  color: #000000;
+  text-indent: 0 !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-bottom: solid 1px #bbbbbb;
+  transition: 0.2s;
+}
+nav#secondary a:hover, nav#secondary h4:hover {
+  background: #c8c8c8 !important;
+}
+nav#secondary a:focus, nav#secondary h4:focus {
+  outline-style: solid;
+  outline-offset: -3px;
+  outline: 3px solid #eaaa00;
+}
+nav#secondary h4 {
+  padding: 0;
+  border: none;
+}
+nav#secondary h4 button.minimalist-accordion__header,
+nav#secondary h4 button.minimalist-noanim-accordion__header,
+nav#secondary h4 button.minimalist-css-accordion__header {
+  padding: 1.125rem 0.5rem 1rem;
+  font-size: clamp(0.75rem, 0.75rem + 3.5vw, 0.75rem);
+  text-transform: uppercase;
+  border: none;
+  border-bottom-color: #bbbbbb !important;
+}
+nav#secondary h4 button.minimalist-accordion__header:hover,
+nav#secondary h4 button.minimalist-noanim-accordion__header:hover,
+nav#secondary h4 button.minimalist-css-accordion__header:hover {
+  color: #000000 !important;
+  background: #c8c8c8 !important;
+}
+nav#secondary a .minimalist-accordion__header,
+nav#secondary a .minimalist-noanim-accordion__header,
+nav#secondary a .minimalist-css-accordion__header {
+  padding: 1.125rem 0.5rem 1rem;
+  font-size: clamp(0.85rem, 0.85rem + 3.5vw, 0.85rem);
+  border: none;
+}
+nav#secondary a .minimalist-accordion__header:hover,
+nav#secondary a .minimalist-noanim-accordion__header:hover,
+nav#secondary a .minimalist-css-accordion__header:hover {
+  color: #000000 !important;
+  background: #c8c8c8 !important;
+}
+
+nav#secondary .currentbranch0,
+nav#secondary .currentbranch4 {
+  background: #5a0722;
+}
+nav#secondary .currentbranch0 button.minimalist-accordion__header,
+nav#secondary .currentbranch0 button.minimalist-noanim-accordion__header,
+nav#secondary .currentbranch0 button.minimalist-css-accordion__header,
+nav#secondary .currentbranch4 button.minimalist-accordion__header,
+nav#secondary .currentbranch4 button.minimalist-noanim-accordion__header,
+nav#secondary .currentbranch4 button.minimalist-css-accordion__header {
+  color: #eeeeee !important;
+}
+nav#secondary .currentbranch0 button.minimalist-accordion__header:hover,
+nav#secondary .currentbranch0 button.minimalist-noanim-accordion__header:hover,
+nav#secondary .currentbranch0 button.minimalist-css-accordion__header:hover,
+nav#secondary .currentbranch4 button.minimalist-accordion__header:hover,
+nav#secondary .currentbranch4 button.minimalist-noanim-accordion__header:hover,
+nav#secondary .currentbranch4 button.minimalist-css-accordion__header:hover {
+  color: #eeeeee !important;
+  background: #5a0722 !important;
+}
+nav#secondary .currentbranch0 button.minimalist-accordion__header:after,
+nav#secondary .currentbranch0 button.minimalist-noanim-accordion__header:after,
+nav#secondary .currentbranch0 button.minimalist-css-accordion__header:after,
+nav#secondary .currentbranch4 button.minimalist-accordion__header:after,
+nav#secondary .currentbranch4 button.minimalist-noanim-accordion__header:after,
+nav#secondary .currentbranch4 button.minimalist-css-accordion__header:after {
+  background-image: url(../images/ui-arrow-carrousel-next@2x.png);
+}
+
+nav#secondary .minimalist-accordion__header::after,
+nav#secondary .minimalist-noanim-accordion__header::after,
+nav#secondary .minimalist-css-accordion__header::after {
+  margin: 0.075rem;
+}
+
+nav#secondary .minimalist-accordion__panel {
+  margin: 0;
+  background: #bbbbbb;
+}
+nav#secondary .minimalist-accordion__panel a:hover, nav#secondary .minimalist-accordion__panel h4:hover {
+  background: #c8c8c8 !important;
+}
+
+/* update */
+nav#secondary a:hover {
+  color: #5a0722 !important;
+}
+nav#secondary a button:hover {
+  color: #5a0722 !important;
+}
+
+nav#secondary a button {
+  padding: 0;
+  margin: 0;
+  font-family: "Antenna", sans-serif;
+  font-size: clamp(0.85rem, 0.85rem + 3.5vw, 0.85rem);
+  text-align: left;
+  color: #000000 !important;
+  border: 0 !important;
+  background: none;
+}
+nav#secondary a button:hover {
+  color: #5a0722;
+  background: none;
+  outline: none;
+}
+nav#secondary a button:focus {
+  outline: none;
+}
+nav#secondary a button ::after {
+  margin-top: -2rem;
+}
+
+nav#secondary .minimalist-noanim-accordion__header::after,
+nav#secondary .minimalist-css-accordion__header::after {
+  margin: 0.1rem 0 0 0 !important;
+  transform: rotate(0deg);
+}
+
+nav#secondary .minimalist-noanim-accordion__header::after,
+nav#secondary .minimalist-css-accordion__header::after {
+  margin: 0.1rem 0 0 0 !important;
+  transform: rotate(90deg) !important;
+  background-image: none;
+}
+
+nav#secondary .minimalist-accordion__panel {
+  margin: 0 !important;
+  background: #d5d5d5 !important;
+}
+nav#secondary .minimalist-accordion__panel a {
+  color: #000000 !important;
+}
+
+/* CSS - END */
+/* nav-sliding-menu and nav secondary */
+#secondary .multilevel-linkdiv-0, #side-nav .multilevel-linkdiv-0 {
+  margin: 0 !important;
+  padding: 0.75rem !important;
+  display: block !important;
+  max-height: 100em !important;
+  visibility: visible !important;
+  overflow: hidden !important;
+  opacity: 1 !important;
+  transition: visibility 0s ease, max-height 1s ease, opacity 1s ease !important;
+  text-transform: none !important;
+  text-decoration: none !important;
+  font-family: "Antenna", sans-serif !important;
+  font-size: clamp(0.95rem, 0.95rem + 3.5vw, 0.95rem) !important;
+  color: #e6e6e6 !important;
+  transition: 0.3s !important;
+}
+
+#secondary .currentbranch0 a, #secondary .multilevel-linkdiv-0 .currentbranch0 a, #secondary .multilevel-linkdiv-0 .currentbranch1 a {
+  color: #eeeeee !important;
+  background: none !important;
+}
+
+.multi-level-sliding-navigation h5 {
+  margin: 0 0 0.75rem;
+  color: #eeeeee;
+}
+
+.multi-level-sliding-navigation a {
+  padding: 1rem 0.75rem 0.95rem !important;
+  text-transform: none !important;
+}
+
+/* wrapper */
+.multi-level-sliding-navigation {
+  background: none;
+  float: none;
+}
+.Script .multi-level-sliding-navigation {
+  bottom: 0;
+  display: none;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+.Script .multi-level-sliding-navigation[aria-hidden=false] {
+  display: flex;
+}
+
+.multi-level-sliding-navigation-body {
+  background: none;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+.multi-level-sliding-navigation-body > * {
+  min-width: 0;
+}
+.Script .multi-level-sliding-navigation-body {
+  margin-inline-start: auto;
+  max-width: 25rem;
+}
+
+.multi-level-sliding-navigation-main {
+  align-items: start;
+  background: none;
+  box-shadow: none;
+  display: flex;
+  flex-grow: 1;
+  overflow: hidden;
+  scroll-behavior: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+.multi-level-sliding-navigation-main::-webkit-scrollbar {
+  display: none;
+}
+.multi-level-sliding-navigation-main > * {
+  flex: 1 0 100%;
+}
+
+.multi-level-sliding-navigation-menu {
+  display: block;
+  height: 100%;
+  left: 0;
+  list-style: none;
+  margin: 0;
+  padding: 1rem 0 1.25rem;
+  position: relative;
+  scroll-snap-align: start;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  background-color: #2f2f2f;
+}
+[dir=rtl] .multi-level-sliding-navigation-menu {
+  left: auto;
+  right: 0;
+}
+.multi-level-sliding-navigation-menu[aria-hidden=true] {
+  display: none;
+}
+.Noscript .multi-level-sliding-navigation-menu ~ .multi-level-sliding-navigation-menu:not(:target) {
+  display: none;
+}
+
+.multi-level-sliding-navigation-item {
+  margin: 0;
+}
+.multi-level-sliding-navigation-item:not(:last-of-type) {
+  border-bottom: 0.0625rem solid hsla(var(--theme-dark), 0.2);
+}
+
+.multi-level-sliding-navigation-link {
+  align-items: center;
+  border-radius: 0.125rem;
+  display: flex;
+  padding: 0.5rem;
+  text-decoration: none;
+  font-weight: 400;
+}
+.multi-level-sliding-navigation-link span.menu-return {
+  color: #eaaa00;
+  text-transform: uppercase;
+}
+.multi-level-sliding-navigation-link > * {
+  display: inline-block;
+  flex-grow: 1;
+  width: 80%;
+  text-transform: none;
+}
+.multi-level-sliding-navigation-link[aria-controls] {
+  font-weight: 600;
+}
+.multi-level-sliding-navigation-link .multi-level-sliding-navigation-icon {
+  flex-grow: 0;
+  margin-inline: 0.5rem 0;
+  float: right;
+  width: 1rem;
+}
+.multi-level-sliding-navigation-link .multi-level-sliding-navigation-icon:first-child {
+  float: left;
+  margin-inline: 0 0.5rem;
+  color: #eaaa00;
+}
+[dir=rtl] .multi-level-sliding-navigation-link .multi-level-sliding-navigation-icon {
+  transform: scaleX(-1);
+}
+
+.multi-level-sliding-navigation-icon {
+  display: block;
+  fill: currentColor;
+  height: 1rem;
+  width: 1rem;
+}
+
+@supports (position: sticky) {
+  .Script .Header--sticky {
+    position: sticky;
+    top: 0;
+    transform: translateY(calc((1 - var(--header-visible)) * -100%));
+    transition: transform 300ms linear 100ms;
+  }
+}
+@media (min-width: 50rem) {
+  .Script .multi-level-sliding-navigation-body {
+    max-width: 30rem;
+  }
+
+  .multi-level-sliding-navigation-menu {
+    padding-inline: 1rem;
+  }
+
+  .multi-level-sliding-navigation-link {
+    font-size: 1.125rem;
+  }
+}
+.Hidden {
+  border: 0 !important;
+  clip: rect(0 0 0 0) !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
+}
+
+
+
+
+#site-nav .multilevel-linkul-0 {
+  float: left;
+  display: none;
+  position: absolute;
+  top: 53px;
+  left: -1px;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  z-index: 0;
+}
+#site-nav .multilevel-linkul-0 button a {
+  padding: 0;
+}
+#site-nav .multilevel-linkul-0 li {
+  float: left;
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-left: solid 1px #222222;
+}
+
+#site-nav .multilevel-linkul-0 li a:hover, #site-nav .multilevel-linkul-0 li a:focus {
+  background-color: #3c3c3c;
+  background-image: none;
+}
+#site-nav ul.multilevel-linkul-0 ul.multilevel-linkul-0 li ul.multilevel-linkul-1 {
+  display: none;
+}
+#site-nav li {
+  display: flex;
+}
+#site-nav li ul li button {
+  display: none;
+  /* only for repo */
+}
+#site-nav li a {
+  padding: 1rem 1.25rem 0.75rem 1.25rem !important;
+}
+/*#site-nav button.main-navigation-btn {
+  padding: 0;
+  height: 3.25rem;
+  width: 2.5rem;
+}*/
+/*#site-nav button.main-navigation-btn:hover {
+  padding: 0;
+  height: 3.25rem;
+  width: 2.5rem;
+}*/
+#site-nav .multilevel-linkul-0 {
+  display: none;
+}
+#site-nav .multilevel-linkul-0.show {
+  display: block;
+  height: auto !important;
+  max-height: 90vh !important;
+  overflow-y: scroll !important;
+  overflow-x: hidden;
+}
+
+@media (max-width: 1200px) {
+  #cta-nav li {
+    display: none;
+  }
+  #cta-nav li#information, #cta-nav li#search {
+    display: inline;
+  }
+}
+
+ul#site-nav button, ul#site-nav button:hover {
+  background-image: url("https://www.luc.edu/media/luc-template-2020/images/ui-menu-arrow-down@2x.png");
+}
+
+#side-nav .multi-level-sliding-navigation-main .multi-level-sliding-navigation-menu {
+  flex: unset !important;
+  width: 100%;
+  position: relative !important;
+  grid-column: 1/3;
+}
+#side-nav .multi-level-sliding-navigation-main .multi-level-sliding-navigation-menu.multilevel-linkul-0, #side-nav .multi-level-sliding-navigation-main .multi-level-sliding-navigation-menu.multilevel-linkul-1, #side-nav .multi-level-sliding-navigation-main .multi-level-sliding-navigation-menu.multilevel-linkul-2 {
+  padding: 0;
+}
+#side-nav .multi-level-sliding-navigation-main .multi-level-sliding-navigation-menu.multilevel-linkul-0 {
+  top: 0;
+}
+#side-nav .multi-level-sliding-navigation-main .multi-level-sliding-navigation-menu.multilevel-linkul-0 li a {
+  width: 100%;
+}
+#side-nav .multi-level-sliding-navigation-main .multi-level-sliding-navigation-menu.show {
+  display: block;
+  animation: slideLeft 0.3s ease-in-out;
+  transform: translateX(0);
+  opacity: 1;
+}
+#side-nav .multi-level-sliding-navigation-main .multi-level-sliding-navigation-item {
+  display: grid;
+  grid-template-columns: auto 50px;
+  width: 100%;
+  border-bottom: solid 1px #555555;
+}
+#side-nav .multi-level-sliding-navigation-main .multi-level-sliding-navigation-item.heading {
+  border: none;
+}
+#side-nav .multi-level-sliding-navigation-main .multi-level-sliding-navigation-item.hide, #side-nav .multi-level-sliding-navigation-main .multi-level-sliding-navigation-item .hide-btn {
+  display: none;
+}
+#side-nav .multi-level-sliding-navigation-main .mobile-nav-btn {
+  transition: 0.3s;
+  background-color: #000000;
+  color: #bbbbbb;
+  width: 100%;
+  height: auto;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+#side-nav .multi-level-sliding-navigation-main .mobile-nav-btn i {
+  cursor: pointer;
+}
+#side-nav .multi-level-sliding-navigation-main .mobile-nav-btn:hover {
+  background: #5a0722;
+}
+#side-nav .multi-level-sliding-navigation-main li.heading {
+  margin: 0.5rem 0;
+  font-size: 1.125rem;
+  color: #eeeeee;
+  line-height: calc(var(--baseline) * 1.3 * 1rem);
+  letter-spacing: 0rem;
+  text-transform: uppercase;
+  font-family: "Antenna Condensed Bold", sans-serif;
+  font-weight: 400;
+  word-spacing: 0.125rem;
+}
+#side-nav .multi-level-sliding-navigation-main li.heading.hide {
+  display: none;
+}
+#side-nav .multi-level-sliding-navigation-main li.back-btn {
+  color: #eaaa00;
+  text-transform: uppercase;
+  display: block;
+  padding: 1rem 0.75rem 0.95rem !important;
+  text-decoration: none;
+  font-family: "Antenna", sans-serif;
+  font-size: 0.95rem !important;
+  text-transform: uppercase;
+  border-bottom: solid 1px #555555;
+  transition: 0.3s;
+  font-weight: 600;
+  width: 100%;
+  cursor: pointer;
+}
+#side-nav .multi-level-sliding-navigation-main li.back-btn:focus {
+  outline-offset: -3px;
+  outline: 3px solid #eaaa00;
+}
+#side-nav .multi-level-sliding-navigation-main li.back-btn .fa {
+  padding-right: 0.5rem;
+}
+#side-nav .multi-level-sliding-navigation-main li:hover {
+  background: #000000 !important;
+  transition: 0.3s;
+}
+#side-nav .multi-level-sliding-navigation-main li a {
+  border: none;
+}
+#side-nav .multi-level-sliding-navigation-main li a.hide {
+  display: none !important;
+}
+#side-nav .multi-level-sliding-navigation-main li a:hover {
+  background: none !important;
+}
+#side-nav .multi-level-sliding-navigation-main li:has(ul.show) {
+  border-bottom: none !important;
+  background: none !important;
+}
+#side-nav .multi-level-sliding-navigation-main li:last-child {
+  border-bottom: none !important;
+}
+#side-nav .multi-level-sliding-navigation-main button {
+  border: none;
+  border-radius: 0;
+}
+#side-nav .multi-level-sliding-navigation-main button.show {
+  width: 100%;
+  padding: 0.909rem 0.5rem 0.908rem;
+  margin: 0;
+  grid-column: 1/3;
+  text-align: left;
+}
+#side-nav .multi-level-sliding-navigation-main button.show::after {
+  content: "Back";
+  padding-left: 0.5rem;
+  vertical-align: middle;
+}
+#side-nav .multi-level-sliding-navigation-main button.show.hide-btn {
+  display: none;
+}
+#side-nav .multi-level-sliding-navigation-main button.show .fa {
+  transform: rotate(180deg);
+}
+
+
+/* PAGE LAYOUT - FACULTY PROFILE */
+
+
+</style>
+</head>
+
+<body class="home-three">
+
+<!-- backtotop - start -->
+<div class="xb-backtotop style-2">
+    <a href="#" class="scroll">
+        <i class="fa fa-arrow-up"></i>
+    </a>
+</div>
+<!-- backtotop - end -->
+
+ <!-- Preloader - Start -->
+
+<!-- Preloader - End -->
+
+
+<div class="body_wrap">
+<style>
+    .xb-fanfact__wrapper{
+        border-radius:none;
+    }
+.xb-fanfact__wrapper .xb-item--img::before{
+/*border-radius: 20px;*/
+}
+* {
+  box-sizing: border-box;
+}
+
+
+
+b {
+  font-weight: bold;
+}
+ul#directory-nav[role=menubar] li:last-of-type button {
+    color: #000000 !important;
+    background-color: #eaaa00;
+}
+#social-icon-bar {
+  position: fixed;
+  top: 45%;
+  left: 0;
+  background: #5a0722;
+  z-index: 10 !important;
+  -webkit-transform: translateY(-40%);
+  -ms-transform: translateY(-40%);
+  transform: translateY(-40%);
+  z-index: 1;
+}
+
+@media (max-width: 1023px) {
+  #social-icon-bar {
+    display: none;
+    top: calc(100% - 100px);
+    width: 100%;
+  }
+}
+
+/* social icons */
+
+#social-icon-bar a {
+  display: block;
+  box-sizing: border-box;
+  text-align: center;
+  margin: 0;
+  padding: 0.75rem 1rem;
+  font-size: 20px;
+  color: #ffffff;
+  border: none;
+  border-top: solid 1px #eeeeee;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+#social-icon-bar a:first-of-type {
+  border-top: none;
+}
+
+@media (max-width: 1023px) {
+  #social-icon-bar a {
+    box-sizing: border-box;
+    padding: 10px 0;
+    width: 20%;
+    border-top: none;
+    border-left: solid 1px #eeeeee;
+  }
+
+  #social-icon-bar a:first-of-type {
+    border-left: none;
+  }
+}
+
+#social-icon-bar a:hover {
+  background-color: #2b0310;
+}
+
+/* FRAMEWORK */
+
+/* ALSO!!! - main-section styling is located in the side-navigation.scss  */
+
+* {
+  box-sizing: border-box;
+}
+
+
+/* header */
+
+header {
+  position: relative;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  border: 0 none;
+  border-radius: 0;
+  background: rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.35);
+  z-index: 2;
+}
+
+header #site-brand-wrapper {
+  padding: 16px 10px;
+  border-top:solid 0.25rem #eaaa00;
+  background: #222222;
+}
+
+header span {
+  margin: 0;
+  padding: 0;
+  width: auto;
+  height: auto;
+}
+
+header span img {
+  margin: 0;
+  padding: 0;
+  width: auto;
+  height: 45px;
+}
+
+@media (max-width: 1199px) {
+  header span img {
+    display: block;
+    height: 40px;
+  }
+}
+
+/* site name */
+
+header #site-name,header #loyola-university-chicago {
+  position: relative;
+  display: block;
+  float: left;
+  bottom: -5px;
+  margin: 0 5px;
+  padding: 0;
+  width: 80%;
+  height: auto;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: clamp(1.5rem, 1.5rem + 3.5vw, 1.5rem);
+  line-height: clamp(1.75rem, 1.75rem + 3.5vw, 1.75rem);
+  color: #bbbbbb;
+  letter-spacing: 0;
+  text-align: left;
+  text-transform: none;
+  background: none;
+}
+
+header #site-name a,header #loyola-university-chicago a {
+  color: #bbbbbb;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+header #site-name a:hover,header #loyola-university-chicago a:hover {
+  color: #ffffff;
+}
+
+@media (max-width: 1200px) {
+  header #site-name,  header #loyola-university-chicago {
+    font-size: clamp(1.5rem, 1.5rem + 3.5vw, 1.5rem);
+    line-height: clamp(2rem, 2rem + 3.5vw, 2rem);
+    margin: 0;
+  }
+}
+
+header #loyola-university-chicago {
+  display: none;
+  bottom: auto;
+  float: left;
+  margin: 0;
+  margin-bottom: 5px;
+  font-size: clamp(0.75rem, 0.95rem + 3.5vw, 0.95rem);
+  line-height: clamp(1.25rem, 1.25rem + 3.5vw, 1.25rem);
+  letter-spacing: 0.035em;
+  text-transform: uppercase;
+  background: none;
+}
+
+header #brand {
+  float: right;
+  margin: 0 5px;
+  background: none;
+}
+
+header #brand a {
+  display: inline-block;
+}
+
+@media (max-width: 1200px) {
+  header #brand {
+    margin: 0;
+  }
+}
+
+header #brand img {
+  float: right;
+  opacity: 0.8;
+}
+
+header #brand img:hover {
+  cursor: pointer;
+}
+
+/* containers */
+
+
+/* footer */
+
+/* MOBILE-NAV-BAR - SLIDING SIDE NAV */
+
+/* mobile-nav-bar */
+
+nav#main-mobile {
+  display: none;
+  float: right;
+  margin: 0;
+  padding: 0;
+  width: 40px;
+  background: none;
+}
+
+@media (max-width: 1023px) {
+  nav#main-mobile {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 1023px) {
+  #main-mobile .container-fluid .container {
+    padding: 0 15px;
+    width: 100%;
+  }
+}
+
+nav#main-mobile .menu-bar {
+  display: block;
+  margin: 6px 0;
+  width: 35px;
+  height: 5px;
+  background: #bbbbbb;
+}
+
+/* mobile - menu-button */
+
+#menu-button-mobile {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 40px;
+  height: 45px;
+  border: none !important;
+  background: none;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.5s ease-in-out opacity;
+  -moz-transition: 0.5s ease-in-out opacity;
+  -o-transition: 0.5s ease-in-out opacity;
+  transition: 0.5s ease-in-out opacity;
+  outline: 0;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+#menu-button-mobile:hover {
+  background: none;
+  opacity: 1;
+}
+
+#menu-button-mobile:hover span.menu-bar-one,#menu-button-mobile:hover span.menu-bar-two,#menu-button-mobile:hover span.menu-bar-three,#menu-button-mobile:hover span.menu-bar-four {
+  background-color: #bbbbbb;
+}
+
+#menu-button-mobile:hover span.menu-text {
+  color: #bbbbbb;
+}
+
+#menu-button-mobile span.menu-bar-one,#menu-button-mobile span.menu-bar-two,#menu-button-mobile span.menu-bar-three,#menu-button-mobile span.menu-bar-four {
+  display: block;
+  position: absolute;
+  margin: 0;
+  height: 5px;
+  width: 100%;
+  background-color: #bbbbbb;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
+/* menu-bar spans */
+
+#menu-button-mobile span.menu-bar-one {
+  top: 0px;
+}
+
+#menu-button-mobile span.menu-bar-two,#menu-button-mobile span.menu-bar-three {
+  top: 10px;
+}
+
+#menu-button-mobile span.menu-bar-four {
+  top: 20px;
+}
+
+#menu-button-mobile > span.menu-text {
+  color: #bbbbbb;
+}
+
+span.menu-text,span.search-text {
+  display: block;
+  margin-top: 0.5em;
+  font-size: clamp(0.95rem, 0.95rem + 3.5vw, 0.95rem);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+span.menu-text {
+  position: absolute;
+  bottom: -4px;
+  width: 100%;
+  font-size: clamp(0.75rem, 0.75rem + 3.5vw, 0.75rem);
+}
+
+#side-nav {
+  position: fixed;
+  top: 0;
+  left: -70vw;
+  width: 70vw;
+  max-width: 70vw;
+  height: auto;
+  min-height: 100vh;
+  overflow: auto;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  z-index: 10002;
+  -moz-transition: all 300ms;
+  -o-transition: all 300ms;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+@media (max-width: 1023px) {
+  #side-nav {
+    left: -85vw;
+    width: 85vw;
+    max-width: 85vw;
+  }
+}
+
+@media (max-width: 735px) {
+  #side-nav {
+    left: -70vw;
+    width: 70vw;
+    max-width: 70vw;
+  }
+}
+
+/* MOVE BODY
+body.active {
+    -moz-transform: translateX(-220px);
+    -ms-transform: translateX(-220px);
+    -webkit-transform: translateX(-220px);
+    transform: translateX(-220px);
+  }
+*/
+
+#sidenav-inner-wrapper {
+  padding: 2rem 2rem 150px 2rem;
+  /* V1 menu */
+  padding: 2rem;
+  /* V2 layered menu */
+}
+
+#global-ctas {
+  padding: 2rem 0 0;
+}
+
+#global-ctas > button {
+  width: 100%;
+}
+
+#global-ctas > button:hover {
+  color: #420519;
+  outline-style: solid;
+  outline-offset: -3px;
+  outline: 3px solid #eaaa00;
+}
+
+/* The navigation menu links */
+
+#side-nav a {
+  display: block;
+  padding: 0.75rem;
+  text-decoration: none;
+ /* font-family: "Antenna Condensed Light", sans-serif;
+  font-size: clamp(1.125rem, 1.125rem + 3.5vw, 1.125rem) !important;*/
+  color: #bbbbbb;
+  text-transform: uppercase;
+  border-bottom: solid 1px #555555;
+  transition: 0.3s;
+}
+
+#side-nav a button {
+  padding: 0.75rem;
+  font-size: clamp(0.95rem, 0.95rem + 3.5vw, 0.95rem);
+  color: #bbbbbb !important;
+  border-bottom: none !important;
+  width: 100%;
+}
+
+#side-nav a:focus {
+  outline-style: solid;
+  outline-offset: -3px;
+  outline: 3px solid #febc18;
+}
+
+#side-nav a:hover {
+  background: rgba(128, 128, 128, 0.3);
+  background: #131313 !important;
+}
+
+/* Position and style the close button (top right corner) */
+
+#side-nav-close {
+  position: relative;
+  margin: 0;
+  width: 36px;
+  height: auto;
+  border-bottom: none;
+  opacity: 0.5;
+}
+
+/* On smaller screens, where height is less than 450px,
+change the style of the sidenav (less padding and a smaller font size) */
+
+@media screen and (max-height: 450px) {
+  #side-nav {
+    padding-top: 15px;
+  }
+
+  #side-nav a {
+    font-size: clamp(1.5rem, 1.5rem + 3.5vw, 1.5rem) !important;
+  }
+}
+
+/* side nav - footer address */
+
+#side-nav-close img {
+  width: 70%;
+}
+
+/* side nav - search */
+
+#side-nav-search-wrapper {
+  margin: 10px 0 20px;
+  padding: 0;
+}
+
+#side-nav-search-wrapper form {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background: none;
+}
+
+#side-nav-search-wrapper form input {
+  margin: 0;
+  padding: 20px;
+  height: 40px;
+  width: 85%;
+  background: #bbbbbb;
+  border: none;
+}
+
+#side-nav-search-wrapper form input {
+  font-size: clamp(1.125rem, 1.125rem + 3.5vw, 1.125rem);
+  text-transform: uppercase;
+  border-radius: 0.33rem 0 0 0.33rem;
+}
+
+#side-nav-search-wrapper form input ::placeholder {
+  color: red !important;
+}
+
+#side-nav form input::placeholder {
+  color: #555555;
+}
+
+#side-nav-search-wrapper form button {
+  float: right;
+  position: relative;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 8px 12px;
+  width: 15%;
+  height: 40px;
+  font-size: clamp(1.125rem, 1.125rem + 3.5vw, 1.125rem);
+  outline: 0 none;
+  border-radius: 0 0.33rem 0.33rem 0;
+  background-color: #5a0722;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+#side-nav-search-wrapper form button:hover {
+  color: #a2a2a2;
+  background-color: #2b0310;
+}
+
+#side-nav-search-wrapper form button i.fa-search:before {
+  top: 30 !important;
+}
+
+#side-nav-search-wrapper #search-label {
+  font-size: 0.015em;
+}
+
+/* MAIN NAV */
+
+@media (max-width: 1023px) {
+  nav#main,  nav#audience-directory,  #site-brand-wrapper #brand {
+    display: none;
+  }
+}
+
+:focus,:focus::not(div) {
+  outline: 3px solid #eaaa00;
+  outline-offset: -3px;
+}
+
+nav,#site-brand-wrapper,#audience-navigation,#directory-navigation {
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #5a0722;
+}
+
+#site-brand-wrapper {
+  background-color: #555555;
+}
+
+nav#main {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  border-top:solid 0.25rem #eaaa00;
+  background-color: #781921;
+  box-shadow: 0 0 0.35rem rgba(0, 0, 0, 0.35);
+  z-index: 10000;
+}
+
+nav ul#directory-nav[role=menubar],nav#main ul#cta-nav[role=menubar] {
+  float: right;
+}
+
+/* W3C - disclosure nav */
+
+ul[role=menubar] {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: 0 none;
+  background: none;
+}
+
+ul[role=menubar] button {
+  margin: 0;
+  padding: 1rem 1.25rem 0.75rem 1.25rem;
+/*  font-family: "OpenSans", "Arial", sans-serif;*/
+  font-size: clamp(0.85rem, 0.85rem + 3.5vw, 0.85rem);
+  font-weight: 600;
+  color: #eeeeee !important;
+  border: none !important;
+  border-radius: 0;
+  background-color: #781921;
+}
+
+ul[role=menubar] button:hover,ul[role=menubar] button:focus {
+  background: #5a0722 !important;
+}
+
+ul[role=menubar] li {
+  float: left;
+  position: relative;
+  display: inline;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: 0;
+  border-left: solid 1px #cccccc5e;
+}
+
+ul[role=menubar] li:last-child {
+  border-right: solid 1px #2f2f2f;
+}
+
+ul[role=menubar] li a[role=menuitem],ul[role=menubar] li a {
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  font-size:15px;
+ /* font-family: "OpenSans", "Arial", sans-serif;
+  font-size: clamp(0.85rem, 0.85rem + 3.5vw, 0.85rem);*/
+  font-weight: 600;
+  letter-spacing: 0.025rem;
+  color: #eeeeee;
+  text-transform: uppercase;
+  text-decoration: none !important;
+  border: 0 none;
+  background-color: #781921;
+  transition: background-color 0.3s;
+  background-image: none;
+  background-size: 100 100 !important;
+}
+
+ul[role=menubar] li a[role=menuitem]:hover,ul[role=menubar] li a[role=menuitem]:focus,ul[role=menubar] li a:hover,ul[role=menubar] li a:focus {
+  background-color: #5a0722 !important;
+}
+
+ul#site-nav button,ul#site-nav button:hover {
+  /* padding: 1.25rem 3.25rem 1rem 1.25rem; T4 DEV FIX */
+  padding: 0;
+  /*
+  background-image: url('/images/ui-arrow-down@2x.png') !important;
+  background-size: 6% !important;
+  background-position: 85% center !important;
+  */
+  background-image: url("https://www.luc.edu/media/luc-template-2020/images/ui-menu-arrow-down@2x.png") !important;
+  /*
+  background-image: url('https://www.luc.edu/media/luc-template-2020/images/ui-menu-arrow-down@2x.png') !important;
+  */
+  background-size: 2.5rem !important;
+  background-position: 101% center !important;
+  background-repeat: no-repeat !important;
+}
+
+/* rotate menu item caret
+nav#main ul#site-nav button[aria-expanded="true"]::after {
+    line-height: 0;
+    transform-origin: center;
+    transform: rotate(90deg);
+}
+*/
+
+nav#main ul[role=menubar] li[role=none] a[role=menuitem] {
+  padding: 22px 20px 17px;
+}
+
+ul#audience-nav[role=menubar] li,ul#directory-nav[role=menubar] li {
+  background-color: none;
+  border-left: 0 none;
+}
+
+ul#audience-nav[role=menubar] li a[role=menuitem],ul#audience-nav[role=menubar] li button,ul#directory-nav[role=menubar] li a[role=menuitem],ul#directory-nav[role=menubar] li button {
+  padding: 0.2rem 1.25rem;
+ /* font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: clamp(0.75rem, 0.75rem + 3.5vw, 0.75rem);*/
+  color: #bbbbbb;
+  border: 0 none;
+  background-color: #5a0722;
+}
+
+ul#audience-nav[role=menubar] li a[role=menuitem]:hover,ul#audience-nav[role=menubar] li a[role=menuitem]:focus,ul#audience-nav[role=menubar] li button:hover,ul#audience-nav[role=menubar] li button:focus,ul#directory-nav[role=menubar] li a[role=menuitem]:hover,ul#directory-nav[role=menubar] li a[role=menuitem]:focus,ul#directory-nav[role=menubar] li button:hover,ul#directory-nav[role=menubar] li button:focus {
+  color: #eeeeee;
+  background-color: #890b34 !important;
+}
+
+ul#audience-nav[role=menubar] button::after,ul#cta-nav[role=menubar] button::after,ul#directory-nav[role=menubar] button::after {
+  display: none;
+}
+
+ul#site-nav[role=menubar] ul li:last-child,ul#audience-nav[role=menubar] li:last-child,ul#directory-nav[role=menubar] li:last-child,ul#information-nav[role=menu] li:last-child {
+  border-right: 0 none;
+}
+
+ul[role=menubar] [role=menuitem]:focus,ul[role=menubar] [role=menuitem]:hover,ul[role=menubar] [role=separator]:focus,ul[role=menubar] [role=separator]:hover {
+  color: #eeeeee;
+}
+
+/* for accessibility */
+
+ul[role=menubar] button:focus,ul[role=menubar] li:focus,ul[role=menubar] li a:focus,ul[role=menubar] [role=menuitem]:focus,ul[role=menubar] li#search [role=menuitem]:focus {
+  outline: 3px solid #eaaa00;
+  outline-offset: -3px;
+}
+
+nav#main ul[role=menubar] [role=menuitem]:focus {
+  outline: 3px solid #eaaa00;
+  outline-offset: -3px;
+}
+
+/* menu separator */
+
+ul[role=menubar] [role=separator] {
+  margin: 0;
+  padding: 0;
+  height: 1px;
+}
+
+ul[role=menubar] ul[role=menu] {
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: -1px;
+  margin: 0;
+  padding: 0;
+}
+
+ul[role=menubar] ul[role=menu] li {
+  border-left: 0 none;
+}
+
+ul[role=menubar] ul#information-nav[role=menu] {
+  left: auto !important;
+  right: 0 !important;
+}
+
+ul[role=menubar] ul[role=menu][style] {
+  top: 45px !important;
+  outline: none;
+  z-index: 0;
+}
+
+ul[role=menubar] ul[role=menu] ul[role=menu][style] {
+  top: 0px !important;
+  outline: none;
+  z-index: 0;
+}
+
+ul[role=menubar] ul[role=menu] li a {
+  display: block;
+  padding: 16px 20px 15px;
+  width: 20em;
+  text-transform: none;
+  border-bottom: solid 1px #888888;
+}
+
+ul[role=menubar] ul[role=menu] li a:hover {
+  background: #3c3c3c;
+}
+
+ul[role=menubar] ul[role=menu] a[aria-haspopup=true]::after {
+  content: ">";
+  float: right;
+  font-size: clamp(1rem, 1rem + 3.5vw, 1rem);
+  font-weight: bold;
+  font-weight: 700;
+  color: #eeeeee;
+}
+
+#directory-nav li {
+  float: left;
+}
+
+#directory-nav li:hover,#directory-nav li:focus {
+  background: #2b0310;
+}
+
+/* cta-nav - information - search */
+
+#information,#search {
+  margin: 0;
+  padding: 0;
+  width: 46px;
+  height: 46px;
+  background:#781921;
+  transition: background-color 0.2s;
+}
+
+#information:hover,#information:focus,#search:hover,#search:focus {
+  background: #5a0722;
+}
+
+#information-button,#search-button {
+  display: block;
+  position: relative;
+  top: 18%;
+  margin: 0 auto;
+  width: 70%;
+  height: 70%;
+  padding: 22%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+#information-button:hover,#search-button:hover {
+  background: rgba(0, 0, 0, 0.5) !important;
+}
+
+#information-button {
+  font-family: "Georgia", serif;
+  font-size: clamp(1.25rem, 1.25rem + 3.5vw, 1.25rem);
+  font-weight: 600;
+  font-style: italic;
+  line-height: 0.5rem;
+  color: #d5d5d5;
+  text-align: center;
+  text-transform: none;
+}
+
+#information #information-button span,#search #search-button span {
+  position: absolute;
+  left: 25%;
+  top: 25%;
+  width: 50%;
+  height: 50%;
+  font-family: "Georgia", serif;
+  font-size: clamp(1.25rem, 1.25rem + 3.5vw, 1.25rem);
+  font-weight: 600;
+  font-style: italic;
+  line-height: clamp(1.5rem, 1.5rem + 3.5vw, 1.5rem);
+  color: #d5d5d5;
+  text-align: center;
+  text-transform: none;
+}
+
+#search #search-button span {
+  font-size: clamp(1.25rem, 1.25rem + 3.5vw, 1.25rem);
+  top: 25%;
+}
+
+i.fa.fa-search {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #d5d5d5;
+}
+
+.fa-search:before {
+  position: absolute;
+  content: "\f002";
+  left: 20%;
+  top: 22%;
+  width: 60%;
+  height: 60%;
+  text-align: center;
+  font-size: clamp(1.125rem, 1.125rem + 3.5vw, 1.125rem);
+}
+
+#search-overlay-wrapper {
+  max-height: 0px;
+  overflow: hidden;
+}
+
+#search-overlay-wrapper #search-overlay.overlay {
+  padding: 0;
+  opacity: 0;
+  height: 0;
+  transition-timing-function: linear, step-end;
+}
+
+/* search overlay close button */
+
+#search-overlay.overlay #search-close {
+  display: block;
+  float: left;
+  margin: 1rem auto 0;
+  width: 100%;
+  font-size: 4em;
+  line-height: clamp(1.25rem, 1.25rem + 3.5vw, 1.25rem);
+  text-align: center;
+  cursor: pointer;
+  color: #eeeeee;
+}
+
+#search-overlay.overlay #search-close:hover {
+  color: #ffffff;
+}
+
+/* search form */
+
+#search-overlay form {
+  font-family: "Antenna Condensed Bold", sans-serif;
+  font-size: 1em;
+  line-height: 0;
+  color: #ffffff;
+  -webkit-text-stroke: 0 none !important;
+}
+
+#search-overlay-wrapper .form-group {
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  border-radius: 0 10px 10px 0;
+}
+
+#search-overlay form .form-group:focus,#search-overlay form .form-group:active,#search-overlay form .form-group input {
+  background: none;
+  box-shadow: none;
+  outline: 3px solid #eaaa00;
+  outline-offset: -3px;
+}
+
+#search-overlay form .form-group,#search-overlay form .form-group:hover {
+  background-color: #bbbbbb;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+#search-overlay form input#global-search-input {
+  position: relative;
+  float: left;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 20px;
+  width: 80%;
+  height: 70px;
+  font-family: "Antenna Condensed Bold", sans-serif;
+  font-size: 1.5rem;
+  color: #555555;
+  text-transform: none;
+  border: solid 0.125rem #ffffff;
+  border-right: none;
+  border-radius: 0.25rem 0 0 0.25rem;
+  background: #bbbbbb;
+  transition: 0.1s linear all;
+}
+
+@media (max-width: 1199px) {
+  #search-overlay form input#global-search-input {
+    height: 50px;
+    font-size: 1.15em;
+  }
+}
+
+@media (max-width: 767px) {
+  #search-overlay form input#global-search-input {
+    width: 65%;
+    height: 40px;
+    font-size: 1em;
+  }
+}
+
+#search-overlay form input#global-search-input:hover {
+  background: #eeeeee;
+}
+
+#search-overlay form input#global-search-input:focus-visible {
+  outline: none;
+}
+
+#search-overlay form input#global-search-input::placeholder {
+  font-family: "Antenna Condensed Bold", sans-serif;
+  font-size: 1rem;
+  color: #5a0722;
+  text-transform: uppercase;
+}
+
+#search-overlay form button {
+  position: relative;
+  float: right;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 8px 12px;
+  width: 20%;
+  height: 70px;
+  font-family: "Antenna Condensed Bold", sans-serif;
+  font-size: 1.5em;
+  color: #bbbbbb !important;
+  outline: 0 none;
+  border: solid 0.125rem #ffffff;
+  border-left: none;
+  border-radius: 0 0.25rem 0.25rem 0;
+  background-color: #5a0722;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+#search-overlay form button:hover {
+  color: #a2a2a2;
+  background-color: #890b34;
+}
+
+@media (max-width: 1199px) {
+  #search-overlay form button {
+    height: 50px;
+    font-size: 1.15em;
+  }
+}
+
+@media (max-width: 767px) {
+  #search-overlay form button {
+    width: 35%;
+    height: 40px;
+    font-size: 1em;
+  }
+}
+
+#search-label {
+  font-size: 0.015em;
+}
+
+/* SEARCH BUTTON */
+
+@media (max-width: 1023px) {
+  nav#main,  nav#audience-directory,  #site-brand-wrapper #brand {
+    display: none;
+  }
+}
+
+/* added for t4 nav */
+
+header #brand {
+  margin: 0 5px;
+}
+
+ul.multilevel-linkul-0 button a {
+  padding: 0;
+}
+
+ul.multilevel-linkul-0 {
+  float: left;
+  display: none;
+  position: absolute;
+  top: 53px;
+  left: -1px;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  z-index: 0;
+}
+
+ul.multilevel-linkul-0 li {
+  float: left;
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-left: solid 1px #222222;
+}
+
+ul.multilevel-linkul-0 li a {
+  float: left;
+  display: block;
+  margin: 0;
+  padding: 1rem 1.25rem 1rem;
+  width: 20rem;
+/*  font-family: "Antenna Condensed Bold", sans-serif;
+  font-size: 0.8rem;*/
+  letter-spacing: 0.0125rem;
+  color: #eeeeee;
+  text-align: left;
+  text-transform: none;
+  text-decoration: none;
+  border: 0 none;
+  border-bottom: solid 1px #888888;
+  transition: background-color 0.3s;
+}
+
+ul.multilevel-linkul-1 {
+  display: none;
+}
+
+#site-nav > li > button:hover > a,#site-nav > li > button:focus > a {
+  background: none !important;
+}
+
+
+/* BACKGROUND IMAGE BASE ------------------------------
+---------------------------------------------------- */
+
+@media only screen and (max-width: 736px) {
+ 
+}
+
+/* CSS - END */
+
+#panel-top {
+  padding: 0;
+  margin: 5em 0;
+  height: 1.975rem;
+  border-bottom: 1px solid #bbbbbb;
+  background: #888888;
+}
+
+#panel-top .container {
+  padding: 0;
+  background: #ffffff;
+}
+
+#panel-top h5 {
+  margin: 0;
+  text-align: center;
+}
+
+#main-content-wrapper-t4 {
+  margin: 4rem auto;
+  width: 80% !important;
+}
+
+#main-wrapper {
+  grid-column: 1/6;
+  height: auto;
+}
+
+#section-header-wrapper {
+  grid-column: 1/9;
+  margin-bottom: 4rem;
+  background: yellow;
+}
+
+#section-content-wrapper {
+  grid-column: 1/4;
+  background: pink;
+}
+
+#aside-wrapper {
+  display: grid;
+  grid-column: 4/9;
+  grid-row: 2;
+  grid-template-areas: "aside-one" "aside-two";
+  background: #eeeeee;
+}
+
+#aside-nav-wrapper {
+  grid-area: aside-one;
+  grid-column: 4;
+  height: 300px;
+  background: lime;
+}
+
+#aside-content-wrapper {
+  grid-area: aside-two;
+  grid-column: 4;
+  height: auto;
+  background: lightblue;
+}
+
+#main-section-wrapper .container.container-100 {
+  width: 100%;
+}
+
+#main-section-wrapper .container.container-80 {
+  width: 80%;
+}
+
+#main-section-wrapper .container.container-50 {
+  width: 50%;
+}
+
+@media (max-width: 735px) {
+  #main-section-wrapper .container.container-50 {
+    width: 80%;
+  }
+}
+
+#site-nav .multilevel-linkul-0 {
+  float: left;
+  display: none;
+  position: absolute;
+  top: 53px;
+  left: -1px;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  z-index: 0;
+}
+
+#site-nav .multilevel-linkul-0 button a {
+  padding: 0;
+}
+
+#site-nav .multilevel-linkul-0 li {
+  float: left;
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-left: solid 1px #222222;
+}
+
+#site-nav .multilevel-linkul-0 li a {
+  float: left;
+  display: block;
+  margin: 0;
+  padding: 1rem 1.25rem 1rem;
+  width: 20rem;
+  /*font-family: "OpenSans", sans-serif;
+  font-size: 0.8rem;*/
+  letter-spacing: 0.0125rem;
+  color: #eeeeee;
+  text-align: left;
+  text-transform: none;
+  text-decoration: none;
+  border: 0 none;
+  border-bottom: solid 1px #bbbbbb;
+/*  background-color: #555555;*/
+  transition: background-color 0.3s;
+}
+
+#site-nav .multilevel-linkul-0 li a:hover,#site-nav .multilevel-linkul-0 li a:focus {
+  background-color: #3c3c3c;
+  background-image: none;
+}
+
+#site-nav ul.multilevel-linkul-0 ul.multilevel-linkul-0 li ul.multilevel-linkul-1 {
+  display: none;
+}
+
+#site-nav li {
+  display: flex;
+}
+
+#site-nav li ul li button {
+  display: none;
+  /* only for repo */
+}
+
+#site-nav li a {
+  padding: 1rem 0.80rem 0.75rem 0.80rem !important;
+}
+
+#site-nav .multilevel-linkul-0 {
+  display: none;
+}
+
+#site-nav .multilevel-linkul-0.show {
+  display: block;
+  margin-top: 3px;
+  height: auto !important;
+  max-height: 90vh !important;
+  overflow-y: scroll !important;
+  overflow-x: hidden;
+}
+
+@media (max-width: 1200px) {
+  #cta-nav li {
+    display: none;
+  }
+
+  #cta-nav li#information,  #cta-nav li#search {
+    display: inline;
+  }
+}
+
+ul#site-nav button,ul#site-nav button:hover {
+  background-image: url("https://www.luc.edu/media/luc-template-2020/images/ui-menu-arrow-down@2x.png");
+}
+
+#side-nav .multi-level-sliding-navigation-main .multi-level-sliding-navigation-menu {
+  flex: unset !important;
+  width: 100%;
+  position: relative !important;
+  grid-column: 1/3;
+}
+
+#side-nav .multi-level-sliding-navigation-main .multi-level-sliding-navigation-menu.multilevel-linkul-0,#side-nav .multi-level-sliding-navigation-main .multi-level-sliding-navigation-menu.multilevel-linkul-1,#side-nav .multi-level-sliding-navigation-main .multi-level-sliding-navigation-menu.multilevel-linkul-2 {
+  padding: 0;
+}
+
+#side-nav .multi-level-sliding-navigation-main .multi-level-sliding-navigation-menu.multilevel-linkul-0 {
+  top: 0;
+}
+
+#side-nav .multi-level-sliding-navigation-main .multi-level-sliding-navigation-menu.multilevel-linkul-0 li a {
+  width: 100%;
+}
+
+#side-nav .multi-level-sliding-navigation-main .multi-level-sliding-navigation-menu.show {
+  display: block;
+  animation: slideLeft 0.3s ease-in-out;
+  transform: translateX(0);
+  opacity: 1;
+}
+
+#side-nav .multi-level-sliding-navigation-main .multi-level-sliding-navigation-item {
+  display: grid;
+  grid-template-columns: auto 50px;
+  width: 100%;
+  border-bottom: solid 1px #555555;
+}
+
+#side-nav .multi-level-sliding-navigation-main .multi-level-sliding-navigation-item.heading {
+  border: none;
+}
+
+#side-nav .multi-level-sliding-navigation-main li.heading {
+  margin: 0.5rem 0;
+  font-size: 1.125rem;
+  color: #eeeeee;
+  line-height: calc(var(--baseline) * 1.3 * 1rem);
+  letter-spacing: 0rem;
+  text-transform: uppercase;
+  font-family: "Antenna Condensed Bold", sans-serif;
+  font-weight: 400;
+  word-spacing: 0.125rem;
+}
+
+#side-nav .multi-level-sliding-navigation-main li:hover {
+  background: #000000 !important;
+  transition: 0.3s;
+}
+
+#side-nav .multi-level-sliding-navigation-main li a {
+  border: none;
+}
+
+#side-nav .multi-level-sliding-navigation-main li a:hover {
+  background: none !important;
+}
+
+#side-nav .multi-level-sliding-navigation-main li:has(ul.show) {
+  border-bottom: none !important;
+  background: none !important;
+}
+
+#side-nav .multi-level-sliding-navigation-main li:last-child {
+  border-bottom: none !important;
+}
+
+#side-nav .multi-level-sliding-navigation-main button {
+  border: none;
+  border-radius: 0;
+}
+
+#side-nav .multi-level-sliding-navigation-main button.show {
+  width: 100%;
+  padding: 0.909rem 0.5rem 0.908rem;
+  margin: 0;
+  grid-column: 1/3;
+  text-align: left;
+}
+
+#side-nav .multi-level-sliding-navigation-main button.show::after {
+  content: "Back";
+  padding-left: 0.5rem;
+  vertical-align: middle;
+}
+
+#side-nav .multi-level-sliding-navigation-main button.show .fa {
+  transform: rotate(180deg);
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideRight {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  to {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+#t4-navigation {
+  border-radius: 0.75rem !important;
+}
+
+#t4-navigation .t4-navigation-wrapper {
+  padding: 1.5em;
+  border-radius: 0.75rem;
+  background: #eeeeee !important;
+}
+
+#t4-navigation .t4-navigation-wrapper ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 !important;
+}
+
+#t4-navigation .t4-navigation-wrapper ul li {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto 50px;
+  margin: 0 !important;
+  width: 100%;
+  overflow: hidden;
+  border: none;
+}
+
+#t4-navigation .t4-navigation-wrapper ul li:after {
+  content: "";
+  position: absolute;
+  border-bottom: solid 1px #bbbbbb;
+  width: 100%;
+  bottom: 0;
+}
+
+#t4-navigation .t4-navigation-wrapper ul li:last-child:after {
+  border: none;
+}
+
+#t4-navigation .t4-navigation-wrapper ul li:last-child > a {
+  border: none;
+}
+
+#t4-navigation .t4-navigation-wrapper ul li:hover {
+  background: #d5d5d5;
+  transition: 0.3s;
+}
+
+#t4-navigation .t4-navigation-wrapper ul li:hover a {
+  background-image: none;
+  background: none;
+}
+
+#t4-navigation .t4-navigation-wrapper ul li:has(button.show):hover {
+  background: none;
+}
+
+#t4-navigation .t4-navigation-wrapper ul li:has(button.show):after {
+  border: none;
+}
+
+#t4-navigation .t4-navigation-wrapper ul li a,#t4-navigation .t4-navigation-wrapper ul li span {
+  display: block;
+  margin: 0;
+  padding: 1.25rem 0.5rem 1rem;
+  width: 100%;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 0.825rem;
+  font-weight: 600;
+  line-height: 1.45;
+  color: #000000;
+  text-indent: 0 !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+#t4-navigation .t4-navigation-wrapper ul li.heading span {
+  grid-column: 1/3;
+  background: #5a0722;
+  color: #eeeeee;
+  font-weight: bold;
+  border-top: solid 2px #ffffff;
+}
+
+#t4-navigation .t4-navigation-wrapper ul li button {
+  border-radius: unset;
+  margin: 0;
+  background: inherit;
+  color: #000000;
+  border: none;
+  font-size: 18px;
+  padding: 0;
+  background: #bbbbbb;
+}
+
+#t4-navigation .t4-navigation-wrapper ul li button:hover {
+  background: #aeaeae;
+}
+
+#t4-navigation .t4-navigation-wrapper ul li button.show {
+  width: 100%;
+  padding: 0.909rem 0.5rem 0.908rem;
+  margin: 0;
+  grid-column: 1/3;
+  text-align: left;
+  background-color: #5a0722;
+  color: #eaaa00;
+}
+
+#t4-navigation .t4-navigation-wrapper ul li button.show::after {
+  content: attr(btn-content);
+  padding-left: 0.5rem;
+  vertical-align: middle;
+  font-family: "Antenna", sans-serif;
+  font-size: 0.725rem;
+}
+
+#t4-navigation .t4-navigation-wrapper ul li button.show:hover {
+  background-color: #5a0722;
+}
+
+#t4-navigation .t4-navigation-wrapper ul li button .fa {
+  cursor: pointer;
+  float: right;
+  padding-right: 1rem;
+}
+
+#t4-navigation .t4-navigation-wrapper ul li button.show .fa {
+  transform: rotate(180deg);
+  float: unset;
+  padding-right: 0.5rem;
+}
+
+#t4-navigation .t4-navigation-wrapper .multilevel-linkul-0,#t4-navigation .t4-navigation-wrapper .multilevel-linkul-1,#t4-navigation .t4-navigation-wrapper .multilevel-linkul-2 {
+  position: relative;
+  display: none;
+  float: unset;
+  top: unset;
+  left: unset;
+  width: 100%;
+  transform: translateX(100%);
+  opacity: 0;
+  grid-column: 1/3;
+}
+
+#t4-navigation .t4-navigation-wrapper .multilevel-linkul-0.show,#t4-navigation .t4-navigation-wrapper .multilevel-linkul-1.show,#t4-navigation .t4-navigation-wrapper .multilevel-linkul-2.show {
+  display: block;
+  animation: nestedNavSlideDown 0.3s ease-in-out;
+  transform: translateX(0);
+  opacity: 1;
+}
+
+#t4-navigation .t4-navigation-wrapper[aria-hidden=true] {
+  display: none;
+}
+
+#t4-navigation .t4-navigation-wrapper[aria-hidden=false] {
+  display: block;
+}
+
+#t4-navigation nav.t4-navigation-wrapper {
+  background: #000000 !important;
+  color: #bbbbbb !important;
+  border-bottom: solid 1px #bbbbbb;
+  border-radius: 0;
+  border-bottom-left-radius: 1rem;
+}
+
+#t4-navigation nav.t4-navigation-wrapper {
+  padding: 0 !important;
+}
+
+#t4-navigation .t4-navigation-wrapper ul li a,#t4-navigation .t4-navigation-wrapper ul li span {
+  padding-left: 1rem;
+}
+
+@keyframes internalNavReveal {
+  from {
+    top: 0;
+  }
+
+  to {
+    top: 100%;
+  }
+}
+
+@keyframes nestedNavSlideDown {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+#t4-navigation .t4-navigation-wrapper {
+  position: relative;
+}
+
+.tab-panel {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.tab-panel[hidden] {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* added for interim - remove for new page layout */
+
+ul#site-nav button,ul#site-nav button:hover {
+  padding: 1rem 3.25rem 0.75rem 1.25rem;
+  background-image: url("https://www.luc.edu/media/luc-template-2020/images/ui-menu-arrow-down@2x.png");
+  background-size: 2.5rem !important;
+  background-position: 101% center !important;
+  background-repeat: no-repeat !important;
+}
+
+#site-nav button.main-navigation-btn {
+    padding: 0;
+/*    height: 3.rem !important;*/
+    width: 2.5rem;
+}
+ul#site-nav button, ul#site-nav button:hover{
+  padding: 0;
+/*   height: 3.25rem !important;*/
+/* margin-bottom:0px !important; */
+}
+
+
+#main-content-wrapper #main-section-wrapper {
+  margin: 0 2.5%;
+  width: 95%;
+}
+
+#main-content-wrapper #main-aside-wrapper-navigation .container,#main-content-wrapper #main-aside-wrapper-content .container {
+  margin: 0 5%;
+  width: 90%;
+}
+
+@media (max-width: 735px) {
+  #main-content-wrapper #main-aside-wrapper-navigation .container,  #main-content-wrapper #main-aside-wrapper-content .container {
+    margin: 0 5%;
+    width: 90%;
+  }
+}
+
+#main-content-wrapper #main-aside-wrapper-navigation .container .container-100,#main-content-wrapper #main-aside-wrapper-content .container .container-100 {
+  margin: 0;
+  width: 100%;
+}
+
+#main-content-wrapper #main-section-wrapper {
+  grid-column: 1/span 8;
+  grid-row: 1/span 4;
+}
+
+@media (max-width: 735px) {
+  #main-content-wrapper #main-section-wrapper {
+    grid-column: 1/span 1;
+    grid-row: 2/span 1;
+  }
+}
+
+#main-content-wrapper #main-aside-wrapper-navigation {
+  grid-column: 10/span 3;
+  grid-row: 1;
+}
+
+@media (max-width: 767px) {
+  #main-content-wrapper #main-aside-wrapper-navigation {
+    grid-column: 1/span 1;
+    grid-row: 1/span 1;
+  }
+}
+
+#main-content-wrapper #main-aside-wrapper-content {
+  grid-column: 10/span 3;
+}
+
+@media (max-width: 735px) {
+  #main-content-wrapper #main-aside-wrapper-content {
+    grid-column: 1/span 1;
+    grid-row: 3/span 1;
+  }
+}
+</style>
+<!-- social media  -->
+<!-- <link rel="stylesheet" href="https://www.luc.edu/media/lucedu/styleassets/styles-panels-dev.css"> -->
+<!-- <link rel="stylesheet" href="https://www.luc.edu/media/lucedu/styleassets/styles-typography.css">  -->
+
+
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+<!--Javascript file jquery-min-v3-4.js --><script type="text/javascript" src="https://www.luc.edu/media/lucedu/styleassets/js/jquery-min-v3-4.js"></script> 
+
+<!-- <link rel="stylesheet" href="https://www.luc.edu/media/lucedu/styleassets/styles-framework.css">  -->
+<!-- mobile view style -->
+<style>
+    nav#main-mobile #menu-button-mobile span.menu-text {
+/*    bottom: 0;*/
+font-weight:900;
+    font-size: clamp(0.75rem, 0.75rem + 3.5vw, 0.75rem);
+    color: #5a0722;
+}
+nav#main-mobile #menu-button-mobile span.menu-bar-one, nav#main-mobile #menu-button-mobile span.menu-bar-two, nav#main-mobile #menu-button-mobile span.menu-bar-three, nav#main-mobile #menu-button-mobile span.menu-bar-four {
+    background: #5a0722;
+}
+nav#main-mobile #menu-button-mobile {
+    width: 2.25rem;
+    opacity: 1;
+}
+header #header-white #site-brand-wrapper {
+ 
+/*    border-bottom: solid 0.25rem #eaaa00;*/
+    box-shadow: 0 0 0.5rem rgb(0 0 0 / 50%);
+}
+/*mobile view logo style*/
+@media (max-width: 1180px) {
+  header #header-white #site-brand-wrapper {
+ 
+    border-bottom: solid 0.25rem #eaaa00;}
+ #brands > a > div > img{
+    width: 340px !important;
+    object-fit: cover;
+    height: 60px !important;
+    margin-left: -23px;
+    margin-top: -5px !important;
+    margin-bottom: -45px !important;
+    display: initial !important;
+ }
+ .hero-banner .swiper-slide img{
+    border-bottom:solid 0.25rem #eaaa00;
+ }
+ .body-class{
+    margin-top: 0 !important;
+ }
+ .hero-btns{
+    padding-top:10px;
+ }
+}
+.body-class{
+    margin-top: 236.4px ;
+}
+
+#menu-0 > li > a > i{
+    display:inline;
+}
+}
+#side-nav .multi-level-sliding-navigation-main .multi-level-sliding-navigation-item.heading {
+    border: none;
+}
+#side-nav .multi-level-sliding-navigation-main li.heading {
+    margin: 0;
+    padding: 0.75rem 1rem 0.75rem;
+    width: 100%;
+    background: #5a0722;
+}
+
+#side-nav .multi-level-sliding-navigation-main .multi-level-sliding-navigation-menu{
+    padding: 0;
+}
+</style>
+
+
+
+  
+<style>
+.multilevel-linkul-1 {display: none;}
+header #header-white #site-brand-wrapper{
+background:#fff;
+}
+#social-icon-bar {
+    left:1270px !important;
+    top: 65% !important;}
+</style>
+
+    <div id="search-overlay-wrapper">
+  <div id="search-overlay" class="overlay">
+    <div class="container">
+      <form class="form-group" role="search" action="https://www.luc.edu/search/index.php">
+        <input id="global-search-input" type="search" class="search-input" placeholder="Search LUC.EDU" name="criteria" aria-labelledby="global-search-input">
+        <button id="gloabal-search-submit" type="submit">Search</button>
+      </form>
+      <span id="search-close" title="Close Overlay">×</span>
+    </div>
+  </div>
+</div>
+    
+
+<!-- nav-sliding-menu -->
+
+  <nav id="side-nav" aria-label="Main navigation" class="sidenav">
+        <div id="sidenav-inner-wrapper">
+
+            <div id="side-nav-search-wrapper">
+                <form class="form-group" role="search" action="https://www.luc.edu/search/index.php">
+                    <input id="global-search-input" type="search" class="search-input" placeholder="Search LUC.EDU" name="criteria" aria-labelledby="search">
+                    <button id="gloabal-search-submit" type="submit" aria-labelledby="search" title="Search"><i class="fa fa-search"></i></button>
+                </form>
+            </div>  
+
+<!-- luc-navigation-multi-level-sliding-v2.html (T4 - DEV)-->
+<section>
+  <nav class="multi-level-sliding-navigation" id="nav" aria-labelledby="multi-level-sliding-navigation-heading">
+    <div class="multi-level-sliding-navigation-body">
+      <div class="multi-level-sliding-navigation-main">
+        <ul class="t4-mobile-navigation multi-level-sliding-navigation-menu" data-level="Main Menu"
+        aria-hidden="false">
+          <li class="heading"><span>Main Menu</span></li><li><a href="/about.shtml"><i class="fa fa-university" style="padding-right:4px;font-size: 19px;"></i>About</a>
+<ul class="multilevel-linkul-0"> 
+<li><a href="/about.shtml" target="_self">Loyola At a Glance</a></li>
+<li><a href="/accreditation/">Accreditation</a></li>
+<li><a href="http://www.luc.edu/mission/index.shtml">Jesuit Catholic Identity</a></li>
+<li><a href="/about/chicago.shtml">Loyola and Chicago</a></li>
+<li><a href="/universityleadership/">University Leadership</a></li>
+<li><a href="/visit.shtml">Visit Campus</a></li>
+
+</ul>
+
+</li><li><a href="/academicsresearch.shtml"><i class="fa fa-university" style="padding-right:4px;font-size: 19px;"></i>Academics</a>
+<ul class="multilevel-linkul-0">
+<li><a href="https://www.luc.edu/academicaffairs">Departments</a></li>
+<li><a href="/academics/schools.shtml">Colleges and Schools</a></li>
+<li><a href="/academics/depts.shtml">Departments and Programs</a></li>
+<li><a href="http://www.luc.edu/online/index.shtml">Online Learning</a></li>
+<li><a href="/academics/schedules/index.shtml">Calendars and Schedules</a>
+<ul class="multilevel-linkul-1">
+<li><a href="/academics/schedules/fall/academic_calendar.shtml">Fall 2024 - 2028 Academic Calendars</a></li>
+<li><a href="/academics/schedules/spring/academic_calendar.shtml">Spring 2025 - 2028 Academic Calendars</a></li>
+<li><a href="/academics/schedules/summer/academic_calendar.shtml">Summer Sessions Academic Calendar</a></li>
+<li><a href="/academics/schedules/fall/access_schedule.shtml">Fall 2025 Registration Access Schedule</a></li>
+<li><a href="/academics/schedules/spring/access_schedule.shtml">Spring 2025 Registration Access Schedule</a></li>
+<li><a href="/academics/schedules/summer/access_schedule.shtml">Summer 2025 Registration Access Schedule</a></li>
+<li><a href="/academics/schedules/j-termschedule/">J-Term Registration and Class Schedule</a></li>
+<li><a href="/academics/schedules/j-term2025registrationaccessschedule/">J-Term 2025 Registration Access Schedule</a></li>
+<li><a href="/academics/schedules/spring/exam_schedule.shtml">Final Exam Schedules</a></li>
+<li><a href="/academics/schedules/classholiday.shtml">Class Holidays</a></li>
+
+</ul>
+
+</li>
+<li><a href="/ovpr/">Research</a></li>
+<li><a href="http://www.luc.edu/studyabroad/index.shtml">Study Abroad Programs</a></li>
+<li><a href="https://catalog.luc.edu">Academic Catalog</a></li>
+
+</ul>
+
+</li><li><a href="/admission.shtml">Admission</a>
+<ul class="multilevel-linkul-0">
+<li><a href="http://www.luc.edu/undergrad/">Undergraduate Admission</a></li>
+<li><a href="https://gpem.luc.edu/portal/admission?tab=home">Grad/Professional Admission</a></li>
+<li><a href="http://www.luc.edu/scps/">Adult Education</a></li>
+<li><a href="https://www.luc.edu/executiveeducation">Executive and Professional Education</a></li>
+<li><a href="http://www.luc.edu/internationaladmission/index.shtml">International Admission</a></li>
+<li><a href="https://gpem.luc.edu/portal/admission?tab=international-requirements" target="_blank">Graduate and Professional International Admission</a></li>
+<li><a href="http://www.luc.edu/bursar/tuition.shtml">Tuition and Fees</a></li>
+<li><a href="http://www.luc.edu/finaid/index.shtml">Financial Aid</a></li>
+<li><a href="http://www.luc.edu/studyabroad/">Study Abroad</a></li>
+<li><a href="https://www.luc.edu/januaryterm">J-Term</a></li>
+<li><a href="http://www.luc.edu/summer/">Summer Sessions</a></li>
+
+</ul>
+
+</li><li><a href="/alumni/">Alumni</a>
+<ul class="multilevel-linkul-0">
+<li><a href="/alumni/aboutus/">About Us</a>
+<ul class="multilevel-linkul-1">
+<li><a href="/alumni/aboutus/jesuitmission/">Jesuit Mission</a></li>
+<li><a href="/alumni/aboutus/constituentengagementteam/">Constituent Engagement Team</a></li>
+<li><a href="/alumni/aboutus/loyolauniversitychicagoalumniassociation/">Loyola University Chicago Alumni Association</a></li>
+
+</ul>
+
+</li>
+<li><a href="/alumni/events/">Events</a>
+<ul class="multilevel-linkul-1">
+<li><a href="/alumniweekend/" target="_self">Alumni Weekend</a></li>
+
+</ul>
+
+</li>
+<li><a href="/alumni/communitiesinterests/">Communities &amp; Interests</a>
+<ul class="multilevel-linkul-1">
+<li><a href="/alumni/communitiesinterests/affinitynetworks/">Affinity Networks</a>
+<ul class="multilevel-linkul-2">
+<li><a href="/alumni/communitiesinterests/affinitynetworks/arrupealumninetwork/">Arrupe Alumni Network</a></li>
+<li><a href="/alumni/communitiesinterests/affinitynetworks/graduatesofthelastdecadegoldalumni/">Graduates of the Last Decade (GOLD) Alumni</a></li>
+<li><a href="/alumni/communitiesinterests/affinitynetworks/loyoladancealumninetwork/">Loyola Dance Alumni Network</a></li>
+<li><a href="/alumni/communitiesinterests/affinitynetworks/blackalumniboardbab/">Black Alumni Board (BAB)</a></li>
+<li><a href="/alumni/communitiesinterests/affinitynetworks/johnfeliceromecenteralumninetwork/">John Felice Rome Center Alumni Network</a></li>
+<li><a href="/alumni/communitiesinterests/affinitynetworks/latinoalumniboardaffinitynetwork/">Latino Alumni Board Affinity Network</a></li>
+<li><a href="/alumni/communitiesinterests/affinitynetworks/mundeleincollegegannonscholaralumnaeboard/">Mundelein College &amp; Gannon Scholar Alumnae Board</a></li>
+<li><a href="/alumni/communitiesinterests/affinitynetworks/muslimalumninetwork/">Muslim Alumni Network</a></li>
+<li><a href="/alumni/communitiesinterests/affinitynetworks/publicserviceaffinitygrouppsag/">Public Service Affinity Group (PSAG)</a></li>
+<li><a href="/alumni/communitiesinterests/affinitynetworks/rugbyalumnigroup/">Rugby Alumni Group</a></li>
+
+</ul>
+
+</li>
+<li><a href="/alumni/communitiesinterests/regionalramblercommunities/">Regional Rambler Communities</a></li>
+<li><a href="/alumni/communitiesinterests/schoolsinstitutes/">Schools &amp; Institutes</a></li>
+<li><a href="/alumni/communitiesinterests/spirituality/">Spirituality</a></li>
+<li><a href="/alumni/communitiesinterests/parentsfamilies/">Parents &amp; Families</a></li>
+<li><a href="/alumni/communitiesinterests/currentstudents/">Current Students</a></li>
+<li><a href="/alumni/communitiesinterests/friendsdonors/">Friends &amp; Donors</a></li>
+
+</ul>
+
+</li>
+<li><a href="/alumni/benefitscareerresources/">Benefits &amp; Career Resources</a>
+<ul class="multilevel-linkul-1">
+<li><a href="/alumni/benefitscareerresources/careersuccess/">Career Success</a>
+<ul class="multilevel-linkul-2">
+<li><a href="/alumni/benefitscareerresources/careersuccess/continuingeducation/">Continuing Education</a></li>
+<li><a href="/alumni/benefitscareerresources/careersuccess/networking/">Networking</a></li>
+
+</ul>
+
+</li>
+<li><a href="https://loyolalinked.luc.edu/hub/luc/" target="_blank">LoyolaLinked</a></li>
+<li><a href="/alumni/benefitscareerresources/alumnidiscountsbenefits/">Alumni Discounts &amp; Benefits</a></li>
+<li><a href="/alumni/benefitscareerresources/libraryaccess/">Library Access</a></li>
+<li><a href="https://www.luc.edu/weddings" target="_blank">Weddings</a></li>
+<li><a href="/alumni/benefitscareerresources/yearbooks/">Yearbooks</a></li>
+<li><a href="/alumni/benefitscareerresources/inmemoriam/">In Memoriam</a></li>
+
+</ul>
+
+</li>
+<li><a href="/alumni/newsstories/">News &amp; Stories</a>
+<ul class="multilevel-linkul-1">
+<li><a href="https://news.luc.edu/magazine/" target="_blank">Loyola Magazine</a></li>
+<li><a href="/alumni/newsstories/classnotes/">Class Notes</a></li>
+<li><a href="/alumni/newsstories/alumniawards/">Alumni Awards</a></li>
+<li><a href="/alumni/newsstories/alumnispotlight/">Alumni Spotlight</a></li>
+
+</ul>
+
+</li>
+
+</ul>
+
+</li><li><a href="/campus_community.shtml">Research</a>
+<ul class="multilevel-linkul-0">
+<li><a href="http://www.loyolaramblers.com/">Athletics</a></li>
+<li><a href="http://www.luc.edu/reslife/index.shtml">Residence Life</a></li>
+<li><a href="http://www.luc.edu/studentdevelopment/index.shtml">Student Development</a></li>
+<li><a href="https://www.luc.edu/studentdevelopment">Student Life</a></li>
+<li><a href="http://www.luc.edu/dos/">Dean of Students</a></li>
+<li><a href="http://www.luc.edu/campusministry/index.shtml">Campus Ministry</a></li>
+<li><a href="http://www.luc.edu/diversity/">Student Diversity</a></li>
+<li><a href="/about/chicago.shtml">Loyola &amp; Chicago</a></li>
+<li><a href="/luma/">Museum of Art</a></li>
+<li><a href="https://luc.edu/undergrad/comevisit/">Visit</a></li>
+<li><a href="/safety/">Campus Safety</a></li>
+
+</ul>
+
+</li><li><a href="/services_resources.shtml">Resources</a>
+<ul class="multilevel-linkul-0">
+<li><a href="https://locus.luc.edu">LOCUS</a></li>
+<li><a href="http://www.luc.edu/bursar/index.shtml">Bursar and Business Office</a></li>
+<li><a href="/students/careers/index.shtml">Career Centers</a>
+<ul class="multilevel-linkul-1">
+<li><a href="http://luc.edu/undergrad/academiclife/university-ranking.html">Undergraduate Programs</a></li>
+
+</ul>
+
+</li>
+<li><a href="/finance/">Finance</a></li>
+<li><a href="http://www.luc.edu/hr/index.shtml">Human Resources</a></li>
+<li><a href="http://www.luc.edu/its/">Information Technology Services</a></li>
+<li><a href="http://www.luc.edu/ic/">Information Commons</a></li>
+<li><a href="https://luc.edu/sas/">Student Academic Services</a></li>
+<li><a href="/celts/">Engaged Learning</a></li>
+<li><a href="http://www.luc.edu/regrec/index.shtml">Registration and Records</a></li>
+<li><a href="http://libraries.luc.edu/">University Libraries</a></li>
+<li><a href="http://www.luc.edu/alumni">Alumni Relations</a></li>
+<li><a href="http://www.luc.edu/news">University Newsroom</a></li>
+<li><a href="http://www.luc.edu/archives/index.shtml">University Archives</a></li>
+
+</ul>
+
+</li></ul>
+      </div>
+    </div>
+  </nav>
+</section>
+        
+<!-- global-ctas -->
+<div id="global-ctas" class="button-maroon"><!-- Recruitment Links text/universal_globalctas -->
+
+<!-- Apply now -->
+
+
+<button onclick="window.location.href='https://www.luc.edu/apply.html';">Apply now</button>
+
+
+
+
+<button onclick="window.location.href='https://www.luc.edu/requestinformation/';">Get info</button>
+
+
+
+<button onclick="window.location.href='https://www.luc.edu/visit.shtml';">Come visit</button>
+
+
+
+
+
+
+
+
+
+
+</div>  
+        
+</div>
+</nav>
+        
+<header>
+<!-- audience directory -->
+<nav id="audience-directory">
+<div class="container-fluid">
+<nav>        
+<ul id="audience-nav" class="disclosure-nav" role="menubar"><li role="menuitem"><button type="button" onclick="location.href=&#39;https://www.luc.edu/about.shtml&#39;" title="Prospective Students">Prospective Students</button></li>
+
+<li role="menuitem"><button type="button" onclick="location.href=&#39;https://www.luc.edu/thekettle&#39;" title="Current students">Current students</button></li>
+
+<li role="menuitem"><button type="button" onclick="location.href=&#39;https://www.luc.edu/alumni&#39;" title="Alumni">Alumni</button></li></ul>
+<ul id="directory-nav" role="menubar">
+<li role="menuitem"><button type="button" onclick="location.href='http://192.168.1.17/new-college-demo/quick_links.php'" title="A-Z">Quick Links</button></li>
+<li role="menuitem"><button type="button" onclick="location.href='https://www.luc.edu/about/contactus.shtml'" title="Contact">Activities</button></li>
+<li role="menuitem"><button type="button" onclick="location.href='https://www.luc.edu/directories'" title="Directories">Facilities</button></li>
+<li role="menuitem"><button type="button" onclick="location.href='https://locus.luc.edu'" title="LOCUS">Alumni</button></li>
+<li role="menuitem"><button type="button" onclick="location.href='https://loyolauniversitychicago3.my.site.com/ascendportal/s/give?appeal=26Y02'" title="Support LUC">Support LUC</button></li>
+</ul>
+</nav>
+</div>
+</nav>
+  
+    <script type="text/javascript">
+      var menubarElement_audience = document.getElementById('audience-nav');
+      if (menubarElement_audience && typeof Menubar !== "undefined") {
+        var menubar = new Menubar(menubarElement_audience);
+        menubar.init();
+      }
+    </script>
+
+    <script type="text/javascript">
+      var menubarElement_directory = document.getElementById('directory-nav');
+      if (menubarElement_directory && typeof Menubar !== "undefined") {
+        var menubar = new Menubar(menubarElement_directory);
+          menubar.init();
+      }
+    </script>
+  
+<!-- header - nav -->
+<div id="header-white">
+  
+<!-- <a class="skip-main" href="#main-content-start">Skip to main content</a> -->
+   
+<!-- brand -->
+<style>
+    header #header-white #site-brand-wrapper #brand{
+        float:none !important;
+        margin:auto;
+    }
+.container-center{
+/*        text-align: center !important;*/
+    }
+</style>
+<div id="site-brand-wrapper" class="container-fluid">
+<span id="brands"style="float:none !important;">
+<a href="https://thenewcollege.edu.in/"><div class="container-center"><img src="https://thenewcollege.edu.in/images/New%20logo%20banner.png" title="The New College" alt="The New College" style="width: 580px;height: 200px;margin-top: -45px;margin-bottom: -45px;display: initial;width:-1;" class="" /></div></a>
+</span>
+<span id="loyola-university-chicago"><a href="https://thenewcollege.edu.in/">The New College</a></span>
+      
+
+<nav id="main-mobile" aria-label="Menu" role="menu" class="">
+<button id="menu-button-mobile" aria-label="Menu Item" aria-controls="side-nav" aria-haspopup="true" tabindex="0" type="button" role="menuitem">
+<span class="menu-bar menu-bar-one"></span>
+<span class="menu-bar menu-bar-two"></span>
+<span class="menu-bar menu-bar-three"></span>
+<span class="menu-bar menu-bar-four"></span>
+<span class="menu-text">Menu</span>
+</button>
+</nav>
+
+  
+</div>
+</div>
+
+  
+</header>  
+  
+<!-- Loyola Alert -->
+<section class="container-fluid panel-announcement-wrapper" id="alertsection">
+    <div class="panel-announcement" id="alertbox"></div>
+</section>
+<script type="text/javascript">// <![CDATA[
+  $.ajax({
+    url: "https://forms.luc.edu/alert/alerts",
+    dataType: "jsonp",
+    success: function(data, textStatus, jqXHR) {
+      if(data.length > 0) {
+        $('#alertbox').append($('<h2>'
++ data[0].message
++ '</h2>'
++ data[0].messageBody
+));
+$("#alertsection").show();
+$("#alertbox").show();
+      }
+    }
+  });
+// ]]></script>
+
+  
+<!-- nav-accessible -->
+<nav id="main" aria-labelledby="site-nav" class="">
+<!-- site menu -->
+<ul id="site-nav" class="disclosure-nav" role="menubar">
+    <li><a href="https://thenewcollege.edu.in/new-college-demo/"><i class="fa fa-home" style="padding-right:4px;font-size: 19px;"></i></a>
+
+
+</li>
+<li><a href="/about.shtml"><i class="fa fa-university" style="padding-right:4px;font-size: 19px;"></i>About</a>
+<ul class="multilevel-linkul-0">
+<li><a href="/about.shtml" target="_self">Loyola At a Glance</a></li>
+<li><a href="/accreditation/">Accreditation</a></li>
+<li><a href="http://www.luc.edu/mission/index.shtml">Jesuit Catholic Identity</a></li>
+<li><a href="/about/chicago.shtml">Loyola and Chicago</a></li>
+<li><a href="/universityleadership/">University Leadership</a></li>
+<li><a href="/visit.shtml">Visit Campus</a></li>
+
+</ul>
+
+</li><li><a href="/academicsresearch.shtml"><i class="fas fa-book-reader" style="padding-right:4px;font-size: 19px;"></i>Academics</a>
+<ul class="multilevel-linkul-0">
+<li><a href="https://thenewcollege.edu.in/new-college-demo//departments.php">Departments</a></li>
+
+<li><a href="/academics/schools.shtml">Colleges and Schools</a></li>
+<li><a href="/academics/depts.shtml">Departments and Programs</a></li>
+<li><a href="http://www.luc.edu/online/index.shtml">Online Learning</a></li>
+<li><a href="/academics/schedules/index.shtml">Calendars and Schedules</a>
+<ul class="multilevel-linkul-1">
+<li><a href="/academics/schedules/fall/academic_calendar.shtml">Fall 2024 - 2028 Academic Calendars</a></li>
+<li><a href="/academics/schedules/spring/academic_calendar.shtml">Spring 2025 - 2028 Academic Calendars</a></li>
+<li><a href="/academics/schedules/summer/academic_calendar.shtml">Summer Sessions Academic Calendar</a></li>
+<li><a href="/academics/schedules/fall/access_schedule.shtml">Fall 2025 Registration Access Schedule</a></li>
+<li><a href="/academics/schedules/spring/access_schedule.shtml">Spring 2025 Registration Access Schedule</a></li>
+<li><a href="/academics/schedules/summer/access_schedule.shtml">Summer 2025 Registration Access Schedule</a></li>
+<li><a href="/academics/schedules/j-termschedule/">J-Term Registration and Class Schedule</a></li>
+<li><a href="/academics/schedules/j-term2025registrationaccessschedule/">J-Term 2025 Registration Access Schedule</a></li>
+<li><a href="/academics/schedules/spring/exam_schedule.shtml">Final Exam Schedules</a></li>
+<li><a href="/academics/schedules/classholiday.shtml">Class Holidays</a></li>
+
+</ul>
+
+</li>
+<li><a href="/ovpr/">Research</a></li>
+<li><a href="http://www.luc.edu/studyabroad/index.shtml">Study Abroad Programs</a></li>
+<li><a href="https://catalog.luc.edu">Academic Catalog</a></li>
+
+</ul>
+
+</li><li><a href="/admission.shtml"><i class="fa fa-graduation-cap" style="padding-right:4px;font-size: 19px;"></i>Admission</a>
+<ul class="multilevel-linkul-0">
+<li><a href="http://www.luc.edu/undergrad/">Undergraduate Admission</a></li>
+<li><a href="https://gpem.luc.edu/portal/admission?tab=home">Grad/Professional Admission</a></li>
+<li><a href="http://www.luc.edu/scps/">Adult Education</a></li>
+<li><a href="https://www.luc.edu/executiveeducation">Executive and Professional Education</a></li>
+<li><a href="http://www.luc.edu/internationaladmission/index.shtml">International Admission</a></li>
+<li><a href="https://gpem.luc.edu/portal/admission?tab=international-requirements" target="_blank">Graduate and Professional International Admission</a></li>
+<li><a href="http://www.luc.edu/bursar/tuition.shtml">Tuition and Fees</a></li>
+<li><a href="http://www.luc.edu/finaid/index.shtml">Financial Aid</a></li>
+<li><a href="http://www.luc.edu/studyabroad/">Study Abroad</a></li>
+<li><a href="https://www.luc.edu/januaryterm">J-Term</a></li>
+<li><a href="http://www.luc.edu/summer/">Summer Sessions</a></li>
+
+</ul>
+
+</li><li><a href="https://thenewcollege.edu.in/new-college-demo//examination.php"><i class="fa fa-pencil-square" style="padding-right:4px;font-size: 19px;"></i>Examination</a>
+
+
+</li><li><a href="/campus_community.shtml"><i class="fa fa-thumbs-up" style="padding-right:4px;font-size: 19px;"></i>Research</a>
+
+
+</li>
+<li><a href="/campus_community.shtml"><i class="fas fa-book-reader" style="padding-right:4px;font-size: 19px;"></i>IQAC</a>
+
+
+</li>
+<li><a href="/campus_community.shtml"><i class="fa fa-cogs" style="padding-right:4px;font-size: 19px;"></i>Service</a>
+<ul class="multilevel-linkul-0">
+<li><a href="http://www.loyolaramblers.com/">Athletics</a></li>
+<li><a href="http://www.luc.edu/reslife/index.shtml">Residence Life</a></li>
+<li><a href="http://www.luc.edu/studentdevelopment/index.shtml">Student Development</a></li>
+<li><a href="https://www.luc.edu/studentdevelopment">Student Life</a></li>
+<li><a href="http://www.luc.edu/dos/">Dean of Students</a></li>
+<li><a href="http://www.luc.edu/campusministry/index.shtml">Campus Ministry</a></li>
+<li><a href="http://www.luc.edu/diversity/">Student Diversity</a></li>
+<li><a href="/about/chicago.shtml">Loyola &amp; Chicago</a></li>
+<li><a href="/luma/">Museum of Art</a></li>
+<li><a href="https://luc.edu/undergrad/comevisit/">Visit</a></li>
+<li><a href="/safety/">Campus Safety</a></li>
+
+</ul>
+
+</li>
+<li><a href="/campus_community.shtml"><i class="fa fa-commenting" style="padding-right:4px;font-size: 19px;"></i>Feedback</a>
+<ul class="multilevel-linkul-0">
+<li><a href="http://www.loyolaramblers.com/">Athletics</a></li>
+<li><a href="http://www.luc.edu/reslife/index.shtml">Residence Life</a></li>
+<li><a href="http://www.luc.edu/studentdevelopment/index.shtml">Student Development</a></li>
+<li><a href="https://www.luc.edu/studentdevelopment">Student Life</a></li>
+<li><a href="http://www.luc.edu/dos/">Dean of Students</a></li>
+<li><a href="http://www.luc.edu/campusministry/index.shtml">Campus Ministry</a></li>
+<li><a href="http://www.luc.edu/diversity/">Student Diversity</a></li>
+<li><a href="/about/chicago.shtml">Loyola &amp; Chicago</a></li>
+<li><a href="/luma/">Museum of Art</a></li>
+<li><a href="https://luc.edu/undergrad/comevisit/">Visit</a></li>
+<li><a href="/safety/">Campus Safety</a></li>
+
+</ul>
+
+</li>
+
+</ul>
+
+</li>
+</ul>    
+    
+<!-- cta menu -->
+    <ul id="cta-nav" class="disclosure-nav" role="menubar">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    </ul>
+  
+    </nav>
+
+  <script type="text/javascript">
+    var menubarElement_site = document.getElementById('site-nav');
+    if (menubarElement_site && typeof Menubar !== "undefined") {
+        var menubar = new Menubar(menubarElement_site);
+        menubar.init();
+    }
+  </script>
+  <script type="text/javascript">
+    var menubarElement_cta = document.getElementById('cta-nav');
+    if (menubarElement_cta && typeof Menubar !== "undefined") {
+      var menubar = new Menubar(menubarElement_cta);
+        menubar.init();
+    }
+  </script>
+  
+<main id="main-content-start" alt="This is the beginning of the main content of the page">
+ 
+
+
+
+
+<!-- navbar end -->
+         <style>
+            .xb-item--imgs{
+              border: 12px solid rgb(173 191 152 / 72%);
+              border-radius: 120px;
+              width: 90%;
+    margin-left: 15px;
+}
+.team-item .xb-item--info{
+    margin-top: 110px;
+text-align: center;
+}
+.team-item .xb-item--name {
+    text-align: center;
+}
+.team-item .xb-item--desig{
+    text-align: center;
+}
+                .team-item {
+box-shadow: 3px 3px 5px 6px #ccc;
+                }
+                .adjust{
+width:100%;height: 200px; object-fit: ;border-radius: 120px !important;
+                }
+                @media screen and (max-width: 767px) {
+  .xb-item--imgs {
+   border: 12px solid rgb(173 191 152 / 72%);
+    border-radius: 120px;
+    width: 70%;
+    margin-left: 50px;
+  }
+}
+
+         </style>
+
+    <!-- header search start -->
+    <div class="header-search-form-wrapper">
+        <div class="xb-search-close xb-close"></div>
+        <div class="header-search-container">
+            <form role="search" class="search-form" action="#">
+                <input type="search" class="search-field" placeholder="Search …" value="" name="s">
+                <button type="submit" class="search-submit"><i class="far fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+    <div class="body-overlay"></div>
+
+    <!-- main area start  -->
+    <main>
+
+        
+
+        <!-- feature + about section start  -->
+        
+        <!-- program section end  -->
+
+        <!-- fanfact + principal section start  -->
+        <style>
+            .colorie{
+                text-align:justify;
+                color:#000;
+            }
+            .xb-news-left.hs-news{
+/*height: 480px;*/
+            }
+            .news-wrap .xb-item--img img{
+                height:350px;
+                width: 100%;
+/*                object-fit: cover;*/
+            }
+        </style>
+       
+
+      
+         <style>
+            .xb-item--content{
+text-align:justify;
+            }
+         </style>
+        
+ <!-- event script -->
+
+<!-- jquery include -->
+
+  
+
+          <!-- cta section start  -->
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+         <section class="">
+            <div class="hs-cta_bg bg_img" data-background="assets/img/bg/cta-bg02.png"></div>
+            <div class="container">
+                <div class="hs-cta-inner pb-120">
+                   
+                      <div class="row mt-none-30">
+                  
+<div class="cta-btn btns justify-content-center ul_li" style="margin-top:50px;">
+
+</div>
+            <div class="hs-cta_shape">
+                <div class="shape"><img src="assets/img/cta/cta-bg01.png" alt=""></div>
+            </div>
+         </section>
+      
+        
+    </main>
+    <!-- main area end  -->
+    <style>
+      .xb-program__wrapper{
+    border: 1px solid #ccc;
+/*      margin-left: 5px;*/
+
+    }
+    .xb-program__wrapper .xb-item--title {
+         text-align: center; 
+         padding:20px;
+    }
+
+    </style>
+      <style>
+                      .xb-item--img {
+  position: relative;
+}
+.title{
+  text-transform:math-auto !important;
+}
+.bottom-icon {
+  margin-top:-50px;
+  margin-left:50%;
+  /*position: absolute;
+  bottom: 10px;
+  left: 50%;*/
+  transform: translateX(-50%);
+  background-color: #047168;
+  color: #fff;
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 27px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+.xb-program__wrapper .xb-item--img img{
+  width: 334px;
+    height: 151px;
+    object-fit: cover;
+}
+/*.xb-program__wrapper .xb-item--img{
+  height: 151px;
+  width:334px;
+  object-fit: cover;
+}*/
+xb-program__wrapper .xb-item--title a{
+ color: #00746b;
+}
+.breadcrumb {
+    margin-top: -160px;
+    padding: 100px 0;
+    min-height: auto;
+}
+                    </style>
+   <section class="breadcrumb bg_img ul_li" data-background="https://html.xpressbuddy.com/edubost/assets/img/bg/breadcrumb_bg.jpg" style="background-image: url(&quot;assets/img/bg/breadcrumb_bg.jpg&quot;);">
+            <div class="container">
+                <div class="breadcrumb__content text-center">
+                    <h2 class="breadcrumb__title">Department of Tamil</h2>
+                    <!-- <p class="breadcrumb__desc">Empowering Wide Range of Learning Opportunities</p> -->
+                </div>
+            </div>
+        </section>
+        <section class="courses pt-120">
+            <div class="container">
+                <div class="text-center">
+                    <div class="program-menu mb-70 text-center">
+                  
+
+
+
+
+
+
+
+                        <button class="" data-filter="*">Profile of the Department</button>
+                        <button data-filter=".cat1" class="">Programmes</button>
+                        <button data-filter=".cat2" class="">Faculty</button>
+                        <button data-filter=".cat3" class="active">Syllabus</button>
+                        <button data-filter=".cat4" class="">Research Guide</button>
+                        <button data-filter=".cat5" class="">Book Publication</button>
+                    </div> 
+                </div>
+               
+
+
+                </div>
+            </div>
+        </section>
+        <section class="about  pb-120 pos-rel">
+            <div class="container">
+                <div class="row align-items-center">
+                   
+                    
+                <div class="section-title about-sec-title mb-60  wow fadeInUp" data-wow-delay="0ms" data-wow-duration=".6s" style="visibility: visible; animation-duration: 0.6s; animation-delay: 0ms; animation-name: fadeInUp;">
+                 
+                    <h2 class="title"style="text-align: center; font-size:48px;">
+Profile of the Department</h2>
+                </div>
+                <div class="row  mt-none-30  no-gutters">
+                  <style>
+                    .about .row.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+.about .row.no-gutters > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+                    .about .col-lg-6 {
+    display: flex;
+    align-items: stretch; /* ensures same height */
+}
+
+.about .xb-about_left video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* fills the height */
+    display: block;
+}
+
+.about-text-col {
+    background: #eeeeee;
+    padding: 20px;
+    display: flex;
+    align-items: center; /* centers text vertically */
+}
+
+.about-text-col .xb-about-right {
+    width: 100%;
+}
+
+                  </style>
+                  <div class="col-lg-6 mt-30">
+    <div class="xb-about_left wow fadeInLeft" data-wow-delay="100ms" data-wow-duration=".6s">
+        <video width="100%" height="100%" loop muted playsinline autoplay poster="https://thenewcollege.edu.in/images/IMG_1660.jpg">
+            <source src="" type="video/mp4">
+        </video>
+    </div>
+</div>
+<div class="col-lg-6 mt-30 about-text-col">
+    <div class="xb-about-right"style="
+    padding: 30px;
+">
+        <h2 class="xb-item--title mb-15">வரலாற்றுச் சுருக்கம்</h2>
+        <p class="xb-item--content">தென்னிந்திய முஸ்லிம் கல்விச் சங்கத்தால் 1951 ஆம் ஆண்டு தொடங்கப்பட்ட புதுக்கல்லூரி முன்னணி உயர்கல்வி நிறுவனங்களுள் ஒன்றாக வளர்த்தெடுக்கப்பட்டுள்ளது. இக்கல்லூரி இஸ்லாமியச் சமுதாயத்தால் நடத்தப்படும் கல்வி நிறுவனமாயினும் பிற வகுப்புகளைச் சேர்ந்த ஏழை எளிய மாணவர்களுக்கும் கல்வி கற்கும் வாய்ப்பளித்து வருகிறது என்பது குறிப்பிடத்தக்கது.முதுநிலை நிலையில் பத்துக்கும் மேற்பட்ட படிப்புகள் இக்கல்லூரியில் பயிற்றுவிக்கப்படுகின்றன.</p>
+        <div class="about-btn mt-30">
+            <a class="more-btn" href="about.html">more about us<span>...</span></a>
+        </div>
+    </div>
+</div>
+
+
+
+                </div>
+            </div>
+            <div class="about-shape">
+                <img src="assets/img/shape/about-shape.png" alt="">
+            </div>
+         </section>
+        <section class="cta" style="background:#fff !important;">
+            <div class=" bg_img  pb-120" >
+                <div class="container">
+                   <div class="section-title text-center mb-40">
+                           
+                            <h2 class="title mb-35">Faculty - Department of Tamil</h2>
+
+                        </div>
+                    <div class="xb-cta-wrap z-1 pos-rel"style="box-shadow:0 4px 20px rgba(0, 0, 0, 0.1);padding:60px;">
+                       
+                    
+  <div class="row justify-content-center">
+    <!-- Shift 1 -->
+    <div class="col-6 col-md-4 text-center">
+      <a class="thm-btn thm-btn--white d-flex justify-content-center align-items-center" href="courses.html">
+        Shift-1
+        <span class="ms-2"><i class="fas fa-book"></i></span>
+      </a>
+    </div>
+
+    <!-- Shift 2 -->
+    <div class="col-6 col-md-4 text-center">
+      <a class="thm-btn thm-btn--white d-flex justify-content-center align-items-center" href="contact.html">
+        Shift-2
+        <span class="ms-2"><i class="fas fa-graduation-cap"></i></span>
+      </a>
+    </div>
+  </div>
+</div>
+
+                    </div>
+                </div>
+            </div>
+         </section>
+        <section class="event clg-event-bg pos-rel pt-115 pb-120">
+            <div class="container">
+                <div class="z-2 pos-rel">
+                    <div class="section-title text-center mb-60">
+                      
+                        <h1 class="title">Upcoming Events</h1>
+                    </div>
+                    <div class="clg-event-wrap mt-20 ul_li_between">
+                        <div class="xb-item--left ul_li mt-20">
+                            <div class="xb-item--date text-center">
+                                <span class="xb-item--moth">Aug</span>
+                                <span class="xb-item--number">25</span>
+                            </div>
+                            <div class="xb-item--holder mt-20">
+                                <h2 class="xb-item--title border-effect"><a href="event-single.html">Ph.D. Open Defence on 04.08.2025</a></h2>
+                                <p class="xb-item--content">15 CNDR presents its' annual 40-hour comprehensive mediation practitioner training. Held completely in-person on the UC Law SF Campus.</p>
+                            </div>
+                        </div>
+                        <div class="xb-item--right mt-20">
+               <!-- <span class="xb-item--time">11:00 AM  2:00 PM</span> -->
+                            <div class="event-btn mt-25">
+                                <a class="more-btn" href="event-single.html">Read More
+                                    <span>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.9585 1.6665H8.0418C7.17513 1.6665 6.4668 2.3665 6.4668 3.23317V4.0165C6.4668 4.88317 7.1668 5.58317 8.03346 5.58317H11.9585C12.8251 5.58317 13.5251 4.88317 13.5251 4.0165V3.23317C13.5335 2.3665 12.8251 1.6665 11.9585 1.6665Z" fill="#170006"></path>
+                                            <path d="M14.3667 4.01689C14.3667 5.34189 13.2834 6.42523 11.9584 6.42523H8.0417C6.7167 6.42523 5.63337 5.34189 5.63337 4.01689C5.63337 3.55023 5.13337 3.25856 4.7167 3.47523C3.5417 4.10023 2.7417 5.34189 2.7417 6.76689V14.6086C2.7417 16.6586 4.4167 18.3336 6.4667 18.3336H13.5334C15.5834 18.3336 17.2584 16.6586 17.2584 14.6086V6.76689C17.2584 5.34189 16.4584 4.10023 15.2834 3.47523C14.8667 3.25856 14.3667 3.55023 14.3667 4.01689ZM10.3167 14.1252H6.6667C6.32503 14.1252 6.0417 13.8419 6.0417 13.5002C6.0417 13.1586 6.32503 12.8752 6.6667 12.8752H10.3167C10.6584 12.8752 10.9417 13.1586 10.9417 13.5002C10.9417 13.8419 10.6584 14.1252 10.3167 14.1252ZM12.5 10.7919H6.6667C6.32503 10.7919 6.0417 10.5086 6.0417 10.1669C6.0417 9.82523 6.32503 9.54189 6.6667 9.54189H12.5C12.8417 9.54189 13.125 9.82523 13.125 10.1669C13.125 10.5086 12.8417 10.7919 12.5 10.7919Z" fill="#170006"></path>
+                                          </svg>
+                                    </span>
+                                </a> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clg-event-wrap mt-20 ul_li_between">
+                        <div class="xb-item--left ul_li mt-20">
+                            <div class="xb-item--date text-center">
+                                <span class="xb-item--moth">July</span>
+                                <span class="xb-item--number">28</span>
+                            </div>
+                            <div class="xb-item--holder mt-20">
+                                <h2 class="xb-item--title border-effect"><a href="event-single.html">5 Days Workshop on AI</a></h2>
+                                <p class="xb-item--content">International Training Program: Promoting Mediation Through Private and Court-Connected Mediation Centers The Center for Negotiation and Dispute Resolution.</p>
+                            </div>
+                        </div>
+                        <div class="xb-item--right mt-20">
+                       <!-- <span class="xb-item--time">11:00 AM  2:00 PM</span> -->
+                            <div class="event-btn mt-25">
+                                <a class="more-btn" href="event-single.html">Read More
+                                    <span>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.9585 1.6665H8.0418C7.17513 1.6665 6.4668 2.3665 6.4668 3.23317V4.0165C6.4668 4.88317 7.1668 5.58317 8.03346 5.58317H11.9585C12.8251 5.58317 13.5251 4.88317 13.5251 4.0165V3.23317C13.5335 2.3665 12.8251 1.6665 11.9585 1.6665Z" fill="#170006"></path>
+                                            <path d="M14.3667 4.01689C14.3667 5.34189 13.2834 6.42523 11.9584 6.42523H8.0417C6.7167 6.42523 5.63337 5.34189 5.63337 4.01689C5.63337 3.55023 5.13337 3.25856 4.7167 3.47523C3.5417 4.10023 2.7417 5.34189 2.7417 6.76689V14.6086C2.7417 16.6586 4.4167 18.3336 6.4667 18.3336H13.5334C15.5834 18.3336 17.2584 16.6586 17.2584 14.6086V6.76689C17.2584 5.34189 16.4584 4.10023 15.2834 3.47523C14.8667 3.25856 14.3667 3.55023 14.3667 4.01689ZM10.3167 14.1252H6.6667C6.32503 14.1252 6.0417 13.8419 6.0417 13.5002C6.0417 13.1586 6.32503 12.8752 6.6667 12.8752H10.3167C10.6584 12.8752 10.9417 13.1586 10.9417 13.5002C10.9417 13.8419 10.6584 14.1252 10.3167 14.1252ZM12.5 10.7919H6.6667C6.32503 10.7919 6.0417 10.5086 6.0417 10.1669C6.0417 9.82523 6.32503 9.54189 6.6667 9.54189H12.5C12.8417 9.54189 13.125 9.82523 13.125 10.1669C13.125 10.5086 12.8417 10.7919 12.5 10.7919Z" fill="#170006"></path>
+                                          </svg>
+                                    </span>
+                                </a> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clg-event-wrap mt-20 ul_li_between">
+                        <div class="xb-item--left ul_li mt-20">
+                            <div class="xb-item--date text-center">
+                                <span class="xb-item--moth">sep</span>
+                                <span class="xb-item--number">22</span>
+                            </div>
+                            <div class="xb-item--holder mt-20">
+                                <h2 class="xb-item--title border-effect"><a href="event-single.html">Special Lecture on Forensic Psychology</a></h2>
+                                <p class="xb-item--content">Join us in the ARC of the 200 McAllister St. building to celebrate the new collage year with the Center for Business Law. Come meet CBL Faculty, Advisors.</p>
+                            </div>
+                        </div>
+                        <div class="xb-item--right mt-20">
+                            <!-- <span class="xb-item--time">11:00 AM  2:00 PM</span> -->
+                            <div class="event-btn mt-25">
+                                <a class="more-btn" href="event-single.html">Read More
+                                    <span>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.9585 1.6665H8.0418C7.17513 1.6665 6.4668 2.3665 6.4668 3.23317V4.0165C6.4668 4.88317 7.1668 5.58317 8.03346 5.58317H11.9585C12.8251 5.58317 13.5251 4.88317 13.5251 4.0165V3.23317C13.5335 2.3665 12.8251 1.6665 11.9585 1.6665Z" fill="#170006"></path>
+                                            <path d="M14.3667 4.01689C14.3667 5.34189 13.2834 6.42523 11.9584 6.42523H8.0417C6.7167 6.42523 5.63337 5.34189 5.63337 4.01689C5.63337 3.55023 5.13337 3.25856 4.7167 3.47523C3.5417 4.10023 2.7417 5.34189 2.7417 6.76689V14.6086C2.7417 16.6586 4.4167 18.3336 6.4667 18.3336H13.5334C15.5834 18.3336 17.2584 16.6586 17.2584 14.6086V6.76689C17.2584 5.34189 16.4584 4.10023 15.2834 3.47523C14.8667 3.25856 14.3667 3.55023 14.3667 4.01689ZM10.3167 14.1252H6.6667C6.32503 14.1252 6.0417 13.8419 6.0417 13.5002C6.0417 13.1586 6.32503 12.8752 6.6667 12.8752H10.3167C10.6584 12.8752 10.9417 13.1586 10.9417 13.5002C10.9417 13.8419 10.6584 14.1252 10.3167 14.1252ZM12.5 10.7919H6.6667C6.32503 10.7919 6.0417 10.5086 6.0417 10.1669C6.0417 9.82523 6.32503 9.54189 6.6667 9.54189H12.5C12.8417 9.54189 13.125 9.82523 13.125 10.1669C13.125 10.5086 12.8417 10.7919 12.5 10.7919Z" fill="#170006"></path>
+                                          </svg>
+                                    </span>
+                                </a> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xb-btn text-center mt-60">
+                        <a class="thm-btn thm-btn--stroke-black" href="event.html">view all events
+                            <span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.9585 1.6665H8.0418C7.17513 1.6665 6.4668 2.3665 6.4668 3.23317V4.0165C6.4668 4.88317 7.1668 5.58317 8.03346 5.58317H11.9585C12.8251 5.58317 13.5251 4.88317 13.5251 4.0165V3.23317C13.5335 2.3665 12.8251 1.6665 11.9585 1.6665Z" fill="#170006"></path>
+                                <path d="M14.3667 4.01689C14.3667 5.34189 13.2834 6.42523 11.9584 6.42523H8.0417C6.7167 6.42523 5.63337 5.34189 5.63337 4.01689C5.63337 3.55023 5.13337 3.25856 4.7167 3.47523C3.5417 4.10023 2.7417 5.34189 2.7417 6.76689V14.6086C2.7417 16.6586 4.4167 18.3336 6.4667 18.3336H13.5334C15.5834 18.3336 17.2584 16.6586 17.2584 14.6086V6.76689C17.2584 5.34189 16.4584 4.10023 15.2834 3.47523C14.8667 3.25856 14.3667 3.55023 14.3667 4.01689ZM10.3167 14.1252H6.6667C6.32503 14.1252 6.0417 13.8419 6.0417 13.5002C6.0417 13.1586 6.32503 12.8752 6.6667 12.8752H10.3167C10.6584 12.8752 10.9417 13.1586 10.9417 13.5002C10.9417 13.8419 10.6584 14.1252 10.3167 14.1252ZM12.5 10.7919H6.6667C6.32503 10.7919 6.0417 10.5086 6.0417 10.1669C6.0417 9.82523 6.32503 9.54189 6.6667 9.54189H12.5C12.8417 9.54189 13.125 9.82523 13.125 10.1669C13.125 10.5086 12.8417 10.7919 12.5 10.7919Z" fill="#170006"></path>
+                              </svg></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="clg-event-shape">
+                <div class="shape shape--one">
+                    <img src="assets/img/shape/man-01.png" alt="">
+                </div>
+                <div class="shape shape--two">
+                    <img src="assets/img/shape/man-02.png" alt="">
+                </div>
+                <div class="shape shape--three">
+                    <img src="assets/img/shape/Vector01.png" alt="">
+                </div>
+                <div class="shape shape--four">
+                    <img src="assets/img/shape/Vector02.png" alt="">
+                </div>
+                <div class="shape shape--five">
+                    <img src="assets/img/shape/Vector03.png" alt="">
+                </div>
+                <div class="shape shape--six">
+                    <img src="assets/img/shape/Vector04.png" alt="">
+                </div>
+                <div class="shape shape--seven">
+                    <img src="assets/img/shape/Vector05.png" alt="">
+                </div>
+                <div class="shape shape--eight">
+                    <img src="assets/img/shape/Vector06.png" alt="">
+                </div>
+                <div class="shape shape--nine">
+                    <img src="assets/img/shape/Vector07.png" alt="">
+                </div>
+            </div>
+         </section>
+         <section class="campus pos-rel bg_img z-1 pb-200  light-green-back pdt-50" data-background="" style="padding-top: 50px !important; background-image: url(&quot;&quot;);">
+            <div class="section-title mb-60  text-center">
+                <!-- <span class="sub-title">Our Campus Life</span> -->
+                <h1 class="title">Our Gallery</h1>
+            </div>
+            <div class="campus-slider mr-set swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events">
+                <div class="swiper-wrapper" id="swiper-wrapper-b10116936e9e29676" aria-live="off" style="transition-duration: 0ms; transform: translate3d(-1517px, 0px, 0px);"><div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" data-swiper-slide-index="0" role="group" aria-label="1 / 9" style="width: 476px; margin-right: 30px;">
+                        <div class="xb-campus__wrapper pos-rel">
+                            <div class="xb-item--img pos-rel">
+                                <img src="https://thenewcollege.edu.in/images/homegallery/pic4.jpg" alt="">
+                            </div>
+                            <div class="xb-item--holder">
+                                <h3 class="xb-item--title">Cultural Experiences</h3>
+                                <div class="xb-btn_thm ul_li">
+                                    <a class="thm-btn btn-yellow" href="#!">read more
+                                        <span><svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M13 0.999999C13 0.447714 12.5523 -1.14869e-06 12 -1.40157e-06L3 -6.00782e-07C2.44772 -9.37957e-07 2 0.447715 2 0.999999C2 1.55228 2.44772 2 3 2L11 2L11 10C11 10.5523 11.4477 11 12 11C12.5523 11 13 10.5523 13 10L13 0.999999ZM1.70711 12.7071L12.7071 1.70711L11.2929 0.292892L0.292893 11.2929L1.70711 12.7071Z" fill="black"></path>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div><div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="1" role="group" aria-label="2 / 9" style="width: 476px; margin-right: 30px;">
+                        <div class="xb-campus__wrapper pos-rel">
+                            <div class="xb-item--img pos-rel">
+                                <img src="https://thenewcollege.edu.in/images/homegallery/pic1.jpeg" alt="">
+                            </div>
+                            <div class="xb-item--holder">
+                                <h3 class="xb-item--title">Cultural Experiences</h3>
+                                <div class="xb-btn_thm ul_li">
+                                    <a class="thm-btn btn-yellow" href="#!">read more
+                                        <span><svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M13 0.999999C13 0.447714 12.5523 -1.14869e-06 12 -1.40157e-06L3 -6.00782e-07C2.44772 -9.37957e-07 2 0.447715 2 0.999999C2 1.55228 2.44772 2 3 2L11 2L11 10C11 10.5523 11.4477 11 12 11C12.5523 11 13 10.5523 13 10L13 0.999999ZM1.70711 12.7071L12.7071 1.70711L11.2929 0.292892L0.292893 11.2929L1.70711 12.7071Z" fill="black"></path>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div><div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next" data-swiper-slide-index="2" role="group" aria-label="3 / 9" style="width: 476px; margin-right: 30px;">
+                        <div class="xb-campus__wrapper pos-rel">
+                            <div class="xb-item--img pos-rel">
+                                <img src="https://thenewcollege.edu.in/images/homegallery/PANA4725_11zon.jpg" alt="">
+                            </div>
+                            <div class="xb-item--holder">
+                                <h3 class="xb-item--title">Cultural Experiences</h3>
+                                <div class="xb-btn_thm ul_li">
+                                    <a class="thm-btn btn-yellow" href="#!">read more
+                                        <span><svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M13 0.999999C13 0.447714 12.5523 -1.14869e-06 12 -1.40157e-06L3 -6.00782e-07C2.44772 -9.37957e-07 2 0.447715 2 0.999999C2 1.55228 2.44772 2 3 2L11 2L11 10C11 10.5523 11.4477 11 12 11C12.5523 11 13 10.5523 13 10L13 0.999999ZM1.70711 12.7071L12.7071 1.70711L11.2929 0.292892L0.292893 11.2929L1.70711 12.7071Z" fill="black"></path>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="0" role="group" aria-label="4 / 9" style="width: 476px; margin-right: 30px;">
+                        <div class="xb-campus__wrapper pos-rel">
+                            <div class="xb-item--img pos-rel">
+                                <img src="https://thenewcollege.edu.in/images/homegallery/pic4.jpg" alt="">
+                            </div>
+                            <div class="xb-item--holder">
+                                <h3 class="xb-item--title">Cultural Experiences</h3>
+                                <div class="xb-btn_thm ul_li">
+                                    <a class="thm-btn btn-yellow" href="#!">read more
+                                        <span><svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M13 0.999999C13 0.447714 12.5523 -1.14869e-06 12 -1.40157e-06L3 -6.00782e-07C2.44772 -9.37957e-07 2 0.447715 2 0.999999C2 1.55228 2.44772 2 3 2L11 2L11 10C11 10.5523 11.4477 11 12 11C12.5523 11 13 10.5523 13 10L13 0.999999ZM1.70711 12.7071L12.7071 1.70711L11.2929 0.292892L0.292893 11.2929L1.70711 12.7071Z" fill="black"></path>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="1" role="group" aria-label="5 / 9" style="width: 476px; margin-right: 30px;">
+                        <div class="xb-campus__wrapper pos-rel">
+                            <div class="xb-item--img pos-rel">
+                                <img src="https://thenewcollege.edu.in/images/homegallery/pic1.jpeg" alt="">
+                            </div>
+                            <div class="xb-item--holder">
+                                <h3 class="xb-item--title">Cultural Experiences</h3>
+                                <div class="xb-btn_thm ul_li">
+                                    <a class="thm-btn btn-yellow" href="#!">read more
+                                        <span><svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M13 0.999999C13 0.447714 12.5523 -1.14869e-06 12 -1.40157e-06L3 -6.00782e-07C2.44772 -9.37957e-07 2 0.447715 2 0.999999C2 1.55228 2.44772 2 3 2L11 2L11 10C11 10.5523 11.4477 11 12 11C12.5523 11 13 10.5523 13 10L13 0.999999ZM1.70711 12.7071L12.7071 1.70711L11.2929 0.292892L0.292893 11.2929L1.70711 12.7071Z" fill="black"></path>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-next" data-swiper-slide-index="2" role="group" aria-label="6 / 9" style="width: 476px; margin-right: 30px;">
+                        <div class="xb-campus__wrapper pos-rel">
+                            <div class="xb-item--img pos-rel">
+                                <img src="https://thenewcollege.edu.in/images/homegallery/PANA4725_11zon.jpg" alt="">
+                            </div>
+                            <div class="xb-item--holder">
+                                <h3 class="xb-item--title">Cultural Experiences</h3>
+                                <div class="xb-btn_thm ul_li">
+                                    <a class="thm-btn btn-yellow" href="#!">read more
+                                        <span><svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M13 0.999999C13 0.447714 12.5523 -1.14869e-06 12 -1.40157e-06L3 -6.00782e-07C2.44772 -9.37957e-07 2 0.447715 2 0.999999C2 1.55228 2.44772 2 3 2L11 2L11 10C11 10.5523 11.4477 11 12 11C12.5523 11 13 10.5523 13 10L13 0.999999ZM1.70711 12.7071L12.7071 1.70711L11.2929 0.292892L0.292893 11.2929L1.70711 12.7071Z" fill="black"></path>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" data-swiper-slide-index="0" role="group" aria-label="7 / 9" style="width: 476px; margin-right: 30px;">
+                        <div class="xb-campus__wrapper pos-rel">
+                            <div class="xb-item--img pos-rel">
+                                <img src="https://thenewcollege.edu.in/images/homegallery/pic4.jpg" alt="">
+                            </div>
+                            <div class="xb-item--holder">
+                                <h3 class="xb-item--title">Cultural Experiences</h3>
+                                <div class="xb-btn_thm ul_li">
+                                    <a class="thm-btn btn-yellow" href="#!">read more
+                                        <span><svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M13 0.999999C13 0.447714 12.5523 -1.14869e-06 12 -1.40157e-06L3 -6.00782e-07C2.44772 -9.37957e-07 2 0.447715 2 0.999999C2 1.55228 2.44772 2 3 2L11 2L11 10C11 10.5523 11.4477 11 12 11C12.5523 11 13 10.5523 13 10L13 0.999999ZM1.70711 12.7071L12.7071 1.70711L11.2929 0.292892L0.292893 11.2929L1.70711 12.7071Z" fill="black"></path>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div><div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="1" role="group" aria-label="8 / 9" style="width: 476px; margin-right: 30px;">
+                        <div class="xb-campus__wrapper pos-rel">
+                            <div class="xb-item--img pos-rel">
+                                <img src="https://thenewcollege.edu.in/images/homegallery/pic1.jpeg" alt="">
+                            </div>
+                            <div class="xb-item--holder">
+                                <h3 class="xb-item--title">Cultural Experiences</h3>
+                                <div class="xb-btn_thm ul_li">
+                                    <a class="thm-btn btn-yellow" href="#!">read more
+                                        <span><svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M13 0.999999C13 0.447714 12.5523 -1.14869e-06 12 -1.40157e-06L3 -6.00782e-07C2.44772 -9.37957e-07 2 0.447715 2 0.999999C2 1.55228 2.44772 2 3 2L11 2L11 10C11 10.5523 11.4477 11 12 11C12.5523 11 13 10.5523 13 10L13 0.999999ZM1.70711 12.7071L12.7071 1.70711L11.2929 0.292892L0.292893 11.2929L1.70711 12.7071Z" fill="black"></path>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div><div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next" data-swiper-slide-index="2" role="group" aria-label="9 / 9" style="width: 476px; margin-right: 30px;">
+                        <div class="xb-campus__wrapper pos-rel">
+                            <div class="xb-item--img pos-rel">
+                                <img src="https://thenewcollege.edu.in/images/homegallery/PANA4725_11zon.jpg" alt="">
+                            </div>
+                            <div class="xb-item--holder">
+                                <h3 class="xb-item--title">Cultural Experiences</h3>
+                                <div class="xb-btn_thm ul_li">
+                                    <a class="thm-btn btn-yellow" href="#!">read more
+                                        <span><svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M13 0.999999C13 0.447714 12.5523 -1.14869e-06 12 -1.40157e-06L3 -6.00782e-07C2.44772 -9.37957e-07 2 0.447715 2 0.999999C2 1.55228 2.44772 2 3 2L11 2L11 10C11 10.5523 11.4477 11 12 11C12.5523 11 13 10.5523 13 10L13 0.999999ZM1.70711 12.7071L12.7071 1.70711L11.2929 0.292892L0.292893 11.2929L1.70711 12.7071Z" fill="black"></path>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div></div>
+                <div class="swiper-pagination ul_li_center swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span></div>
+            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+         </section>
+          <section class="event clg-event-bg pos-rel pt-115 pb-120">
+            <div class="container">
+                <div class="z-2 pos-rel">
+                    <div class="section-title text-center mb-60">
+                      
+                        <h1 class="title">Upcoming EContents</h1>
+                    </div>
+                    <div class="clg-event-wrap mt-20 ul_li_between">
+                        <div class="xb-item--left ul_li mt-20">
+                            <div class="xb-item--date text-center">
+                                <span class="xb-item--moth">Aug</span>
+                                <span class="xb-item--number">25</span>
+                            </div>
+                            <div class="xb-item--holder mt-20">
+                                <h2 class="xb-item--title border-effect"><a href="event-single.html">
+Foundation Tamil IV Semester</a></h2>
+                                <!-- <p class="xb-item--content">15 CNDR presents its' annual 40-hour comprehensive mediation practitioner training. Held completely in-person on the UC Law SF Campus.</p> -->
+                            </div>
+                        </div>
+                        <div class="xb-item--right mt-20">
+               <!-- <span class="xb-item--time">11:00 AM  2:00 PM</span> -->
+                            <div class="event-btn mt-25">
+                                <a class="more-btn" href="event-single.html">Read More
+                                    <span>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.9585 1.6665H8.0418C7.17513 1.6665 6.4668 2.3665 6.4668 3.23317V4.0165C6.4668 4.88317 7.1668 5.58317 8.03346 5.58317H11.9585C12.8251 5.58317 13.5251 4.88317 13.5251 4.0165V3.23317C13.5335 2.3665 12.8251 1.6665 11.9585 1.6665Z" fill="#170006"></path>
+                                            <path d="M14.3667 4.01689C14.3667 5.34189 13.2834 6.42523 11.9584 6.42523H8.0417C6.7167 6.42523 5.63337 5.34189 5.63337 4.01689C5.63337 3.55023 5.13337 3.25856 4.7167 3.47523C3.5417 4.10023 2.7417 5.34189 2.7417 6.76689V14.6086C2.7417 16.6586 4.4167 18.3336 6.4667 18.3336H13.5334C15.5834 18.3336 17.2584 16.6586 17.2584 14.6086V6.76689C17.2584 5.34189 16.4584 4.10023 15.2834 3.47523C14.8667 3.25856 14.3667 3.55023 14.3667 4.01689ZM10.3167 14.1252H6.6667C6.32503 14.1252 6.0417 13.8419 6.0417 13.5002C6.0417 13.1586 6.32503 12.8752 6.6667 12.8752H10.3167C10.6584 12.8752 10.9417 13.1586 10.9417 13.5002C10.9417 13.8419 10.6584 14.1252 10.3167 14.1252ZM12.5 10.7919H6.6667C6.32503 10.7919 6.0417 10.5086 6.0417 10.1669C6.0417 9.82523 6.32503 9.54189 6.6667 9.54189H12.5C12.8417 9.54189 13.125 9.82523 13.125 10.1669C13.125 10.5086 12.8417 10.7919 12.5 10.7919Z" fill="#170006"></path>
+                                          </svg>
+                                    </span>
+                                </a> 
+                            </div>
+                        </div>
+                    </div>
+                    
+                        
+                    
+                    <div class="xb-btn text-center mt-60">
+                        <a class="thm-btn thm-btn--stroke-black" href="event.html">view all events
+                            <span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.9585 1.6665H8.0418C7.17513 1.6665 6.4668 2.3665 6.4668 3.23317V4.0165C6.4668 4.88317 7.1668 5.58317 8.03346 5.58317H11.9585C12.8251 5.58317 13.5251 4.88317 13.5251 4.0165V3.23317C13.5335 2.3665 12.8251 1.6665 11.9585 1.6665Z" fill="#170006"></path>
+                                <path d="M14.3667 4.01689C14.3667 5.34189 13.2834 6.42523 11.9584 6.42523H8.0417C6.7167 6.42523 5.63337 5.34189 5.63337 4.01689C5.63337 3.55023 5.13337 3.25856 4.7167 3.47523C3.5417 4.10023 2.7417 5.34189 2.7417 6.76689V14.6086C2.7417 16.6586 4.4167 18.3336 6.4667 18.3336H13.5334C15.5834 18.3336 17.2584 16.6586 17.2584 14.6086V6.76689C17.2584 5.34189 16.4584 4.10023 15.2834 3.47523C14.8667 3.25856 14.3667 3.55023 14.3667 4.01689ZM10.3167 14.1252H6.6667C6.32503 14.1252 6.0417 13.8419 6.0417 13.5002C6.0417 13.1586 6.32503 12.8752 6.6667 12.8752H10.3167C10.6584 12.8752 10.9417 13.1586 10.9417 13.5002C10.9417 13.8419 10.6584 14.1252 10.3167 14.1252ZM12.5 10.7919H6.6667C6.32503 10.7919 6.0417 10.5086 6.0417 10.1669C6.0417 9.82523 6.32503 9.54189 6.6667 9.54189H12.5C12.8417 9.54189 13.125 9.82523 13.125 10.1669C13.125 10.5086 12.8417 10.7919 12.5 10.7919Z" fill="#170006"></path>
+                              </svg></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="clg-event-shape">
+                <div class="shape shape--one">
+                    <img src="assets/img/shape/man-01.png" alt="">
+                </div>
+                <div class="shape shape--two">
+                    <img src="assets/img/shape/man-02.png" alt="">
+                </div>
+                <div class="shape shape--three">
+                    <img src="assets/img/shape/Vector01.png" alt="">
+                </div>
+                <div class="shape shape--four">
+                    <img src="assets/img/shape/Vector02.png" alt="">
+                </div>
+                <div class="shape shape--five">
+                    <img src="assets/img/shape/Vector03.png" alt="">
+                </div>
+                <div class="shape shape--six">
+                    <img src="assets/img/shape/Vector04.png" alt="">
+                </div>
+                <div class="shape shape--seven">
+                    <img src="assets/img/shape/Vector05.png" alt="">
+                </div>
+                <div class="shape shape--eight">
+                    <img src="assets/img/shape/Vector06.png" alt="">
+                </div>
+                <div class="shape shape--nine">
+                    <img src="assets/img/shape/Vector07.png" alt="">
+                </div>
+            </div>
+         </section>
+   <!-- footer strt -->
+   <style>
+    .xb-footer-main .footer-widget .xb-item--title{
+        white-space:nowrap;
+    }
+   </style>
+<footer class="footer bg_img pos-rel pt-20" data-background="assets/img/bg/footer-bg.jpg" style="background-image: url(&quot;assets/img/bg/footer-bg.jpg&quot;);">
+        <div class="xb-footer-wrap">
+            <div class="container">
+                <div class="footer-cta ul_li_between mb-35">
+                    <div class="xb-item--holder ul_li mt-30">
+                        <div class="xb-item--icon-avatar ul_li">
+                            <span><img src="assets/img/icon/calling-icon01.png" alt=""></span>
+                            <div class="xb-item--avatar">
+                                <img src="assets/img/footer/footer-avatar.png" alt="">
+                            </div>
+                        </div>
+                        <div class="xb-item--content">
+                            If you have questions, order a free conversation <br> with our consultant.
+                        </div>
+                    </div>
+                    <div class="xb-item--contact mt-30">
+                        <span>or use our hotline 24h</span>
+                        <h3>(+91)-44-2835 0386</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="xb-footer-main pt-70 pb-60">
+                <div class="container">
+                    <div class="row mt-none-30">
+                    
+                        <div class="col-xl-3 col-lg-4 col-md-6 mt-30">
+                            <div class="footer-widget">
+                                <h3 class="xb-item--title">ACADEMICS</h3>
+                                <ul class="xb-item--links list-unstyled">
+                                    <li><a href="#!">How to apply</a></li>
+                                    <li><a href="#!">Schedule</a></li>
+                                    <li><a href="#!">Procedure</a></li>
+                                    <li><a href="#!">Eligibility</a></li>
+                                    <li><a href="#!">Fee structure</a></li>
+                                    <li><a href="#!">Scholarships</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 mt-30">
+                            <div class="footer-widget chng-mr">
+                                <h3 class="xb-item--title">SERVICES</h3>
+                                <ul class="xb-item--links list-unstyled">
+                                    <li><a href="#!">Press &amp; Media</a></li>
+                                    <li><a href="#!">Alumni Portal</a></li>
+                                    <li><a href="#!">Newsletters</a></li>
+                                    <li><a href="#!">Departments</a></li>
+                                    <li><a href="#!">People Directory</a></li>
+                                    <li><a href="#!">Careers</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 mt-30">
+                            <div class="footer-widget change-mr">
+                                <h3 class="xb-item--title">LEARNING RESOURCES</h3>
+                                <ul class="xb-item--links list-unstyled">
+                                    <li><a href="#!">Open House</a></li>
+                                    <li><a href="#!">Summer School</a></li>
+                                    <li><a href="#!">ICCRIP 2024</a></li>
+                                    <li><a href="#!">WIC Forum</a></li>
+                                    <li><a href="#!">Placements</a></li>
+                                    <li><a href="#!">Terms &amp; Condition</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                          <div class="col-xl-3 col-lg-4 col-md-6 mt-30">
+                            <div class="footer-widget change-mr">
+                                <h3 class="xb-item--title">RELATED LINKS</h3>
+                                <ul class="xb-item--links list-unstyled">
+                                    <li><a href="#!">Open House</a></li>
+                                    <li><a href="#!">Summer School</a></li>
+                                    <li><a href="#!">ICCRIP 2024</a></li>
+                                    <li><a href="#!">WIC Forum</a></li>
+                                    <li><a href="#!">Placements</a></li>
+                                    <li><a href="#!">Terms &amp; Condition</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom pb-25 pt-25">
+                <div class="copyright text-center">
+                    <p>Copyright © 2025 <a href="index.html">The New College </a>. All rights reserved. | <span class="text-white"><b>Designed & Developed by Firstsoft Technologies (P) Limited.</b></span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+</div>
+
+
+<!-- END Slate Ping Feature - GRAD -->
+
+
+<!-- T4 - DEV bundle.js -->
+<script src="https://www.luc.edu/media/lucedu/styleassets/t4-dev/bundle.js"></script>
+
+
+<!--Javascript file slick.min.js --><script type="text/javascript" src="https://www.luc.edu/media/lucedu/styleassets/js/slick.min.js"></script> <!-- slick.min.js --> 
+<!-- jquery include -->
+<script src="assets/js/jquery-3.7.1.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/swiper.min.js"></script>
+<script src="assets/js/wow.min.js"></script>
+<script src="assets/js/appear.js"></script>
+<script src="assets/js/odometer.min.js"></script>
+<script src="assets/js/countdown.js"></script>
+<script src="assets/js/imagesloaded.pkgd.min.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/parallax-scroll.js"></script>
+<script src="assets/js/jquery.nice-select.min.js"></script>
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
+<script src="assets/js/main.js"></script>
+<!-- event script -->
+
+<!-- jquery include -->
+
+
+<script src="https://html.xpressbuddy.com/meetco/assets/js/parallaxie.js"></script>
+<script src="https://html.xpressbuddy.com/meetco/assets/js/parallax.min.js"></script>
+
+<script src="https://html.xpressbuddy.com/meetco/assets/js/odometer.min.js"></script>
+<script src="https://html.xpressbuddy.com/meetco/assets/js/touchspin.js"></script>
+<script src="https://html.xpressbuddy.com/meetco/assets/js/isotope.pkgd.min.js"></script>
+<script src="https://html.xpressbuddy.com/meetco/assets/js/jquery.nice-select.min.js"></script>
+<script src="https://html.xpressbuddy.com/meetco/assets/js/jquery.marquee.min.js"></script>
+<script src="https://html.xpressbuddy.com/meetco/assets/js/jquery.magnific-popup.min.js"></script>
+<script src="https://html.xpressbuddy.com/meetco/assets/js/jqueryui.js"></script>
+<script src="https://html.xpressbuddy.com/meetco/assets/js/easing.min.js"></script>
+<script src="https://html.xpressbuddy.com/meetco/assets/js/scrollspy.js"></script>
+<script src="https://html.xpressbuddy.com/meetco/assets/js/gsap.js"></script>
+<script src="https://html.xpressbuddy.com/meetco/assets/js/magiccursor.js"></script>
+<script src="https://html.xpressbuddy.com/meetco/assets/js/ScrollTrigger.min.js"></script>
+<script src="https://html.xpressbuddy.com/meetco/assets/js/jquery.countdown.min.js"></script>
+<script src="https://html.xpressbuddy.com/meetco/assets/js/main.js"></script>
+
+<!-- slider js start -->
+
+ <script src="https://www.np.edu.sg/assets/js/jquery.min.js"></script>
+
+<script src="https://www.np.edu.sg/assets/js/swiper-bundle.min.js"></script>
+
+<script src="https://www.np.edu.sg/assets/js/main.min.js"></script>
+</body>
+
+</html>
